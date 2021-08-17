@@ -111,13 +111,13 @@ Once all of this code was up and running, I bundled it into a <a href="https://g
 Now it's a matter of gluing the two together. We needed to be able to read and write console data from the zandronum server and stream it back to Discord. So let's do that:
 
 ```csharp
-    var zandronum = new Zandronum(_zandronumServer, _zandronumPort);
-    zandronum.Rcon.ServerMessage += (sender, eventArgs) =>
-    {
-        ZandronumMessageEventArgs ea = e as ZandronumMessageEventArgs;
-        botTestingChannel.SendMessageAsync(ea.Message);
-    };
-    zandronum.Rcon.ConnectToRcon(_zandronumRConPassword);
+var zandronum = new Zandronum(_zandronumServer, _zandronumPort);
+zandronum.Rcon.ServerMessage += (sender, eventArgs) =>
+{
+    ZandronumMessageEventArgs ea = e as ZandronumMessageEventArgs;
+    botTestingChannel.SendMessageAsync(ea.Message);
+};
+zandronum.Rcon.ConnectToRcon(_zandronumRConPassword);
 ```
 
 Now let's add some bots to a server (in this case, named Chubbs, Crash and Gamma) and see what happens:
@@ -140,6 +140,6 @@ And let's give it a shot:
 
 <img src="/images/doombot-commands.png" />
 
- 
+So far it's been running ok and it's pretty stable. The discord.net library is very nice in that it handles disconnections and re-connects!  
 
-Awesome!
+The next step would be to implement [discord's slash commands](https://blog.discord.com/slash-commands-are-here-8db0a385d9e6)... but maybe that's for version 2! :)
