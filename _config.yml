@@ -20,7 +20,7 @@
 
 title: Lachlan (Rocklan) Barclay's Test Jekyll Blog
 email: clockwise.music@gmail.com
-permalink: /:year/:month/:title
+permalink: /:year/:month/:slug
 description: >- # this means to ignore newlines until "baseurl:"
   Tech blog for Lachlan Barclay.
 baseurl: "" # the subpath of your site, e.g. /blog
