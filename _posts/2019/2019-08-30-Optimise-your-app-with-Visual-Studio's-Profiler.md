@@ -10,7 +10,7 @@ cover-img: https://static.lachlanbarclay.net/pics/performance/MostBusyFunctions.
 
 <p>But hang on... there's so much information! You could spend <b>weeks</b> optimising your app for nothing! 
 
-<h3>Stop The Guesswork!</h3>
+<h3>Stop The Guesswork!!!</h3>
 
 
 <p>Most people <b>guess</b> at what's slow, based on their previous experience. The problem is it's so easy to be wrong, and you can waste a <b>huge</b> amount of time fixing the wrong stuff. So how do you take the guesswork out and start making an actual, measurable difference? </p>
