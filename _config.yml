@@ -42,7 +42,7 @@ social-network-links:
   linkedin: lachlanb
 
 rss-description: Lachlan (Rocklan's) Barclay's Blog
-
+remove-ads: true
 share-links-active:
   twitter: true
   facebook: false
