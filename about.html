@@ -1,0 +1,146 @@
+---
+layout: home
+title: Rocklan's Blog
+subtitle: About Lachlan (Rocklan) Barclay
+cover-img: /images/doomguys.png
+---
+
+<div class="row">
+    <div class="col-sm-12">
+        <h2>About Me</h2>
+
+        <p>My name is Lachlan Barclay and I've been a professional software developer for <span id="daysdeveloping"></span>. I wrote and maintain the <a href="https://supercalcs.com.au/">Retirement Income Simulator</a> in my role as the lead software developer at <a target="_blank" href="https://www.mercer.com.au">Mercer Australia</a>. I have worked for CSIRO, Telstra, Fosters, Sensis, Intrepid Travel, CBM, Defence, Crown Casino & HP. I love 한글 but I'm really bad at it.</p>
+
+        <p>I've written articles for <a href="https://owasp.org/">oWasp</a>, volunteered at <a target="_blank" href="https://www.rhokaustralia.org/">Rhok</a>, been the guitarist in <a target="_blank" href="https://www.youtube.com/watch?v=r8Cj8G3Xevc">Toehider</a> and played guitar, bass and drums many times at church. I've <a href="/2015/05/an-android-app-for-timor-leste">written</a> <a href="/2007/02/mobile-programming">mobile apps</a>, <a href="/2016/04/arduino-midi-patch-changer">built an arduino MIDI foot pedal</a>, <a href="https://lachlanbarclay.bandcamp.com/">released a few albums</a>, <a href="https://www.youtube.com/watch?v=bvkrZ8RWYzY&list=PL-OKBFcgNxZvWvSB_-Bi8RKBUtrwO-prb&index=2&t=0s">been on TV</a>, <a href="/2006/09/ascended-nethack">ascended nethack</a> and got a <a target="_blank" href="https://www.youtube.com/watch?v=dxnHmqdshxo">Grand Master rank in tetris</a>.  </p>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Speaking</h3>
+        <p>I have spoken at <a href="https://ndcsydney.org">NDC Sydney</a>, <a href="https://www.dddmelbourne.com/">DDD Melbourne</a>, <a href="https://www.meetup.com/en-AU/DDD-Melbourne-By-Night/">DDD by night</a> and <a href="https://www.meetup.com/en-AU/Melbourne-ALT-NET/">Alt.Net</a>. Talks that I have given are:</p>
+        <ul>
+            <li><a href="#how-to-be-the-best-developer-in-the-world">How to be the best developer in the world</a></li>
+            <li><a href="#monitoring-all-the-things-with-prometheus-and-grafana">Monitoring all the things with Prometheus and Grafana</a></li>
+            <li><a href="#porting-your-aspnet-code-from-framework-to-core">Porting your ASP.NET app from Framework to Core</a></li>
+            <li><a href="#introduction-to-docker">Introduction to Docker</a></li>
+            <li><a href="#how-to-get-things-changed-at-your-company">How to get things changed at your company</a></li>
+            <li><a href="#zero-downtime-deploys">Zero downtime deploys</a></li>
+            <li><a href="#typescript-in-the-real-world">Typescript in the real world</a></li>
+            <!--<li><a href="#all-things-testing">Unit tests, UI tests and retrofitting to legacy code</a></li>
+            <li><a href="#building-an-iPhone-app-with-phonegap">Building an iPhone app with phonegap</a></li>-->
+        </ul>
+        <p>If you are interested in any of these talks feel free to <a href="https://twitter.com/rocklan">tweet me</a> or <a href="/contact">shoot me an email</a>.</p>
+        <br />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Talk summaries</h3>
+        <br />
+
+        <h4 id="how-to-be-the-best-developer-in-the-world">How to be the best developer in the world</h4>
+        <p>Do you know what it takes to become an awesome developer? Have you sat back and compiled a list 
+        of all the skills, techniques and abilities you need to be fantastic at your job? Often we downplay
+        the difficulties of becoming a great software dev, but in reality, it's a huge combination of 
+        technical skills, people skills, business skills, and the ability to keep 17 cats in the
+        air at any-one time. </p>
+        <p>After hiring a junior graduate who was fresh out of university, I started compiling a checklist 
+        of everything I wanted for him to learn. I was shocked to find just how long that list was, and
+        surprised at how many of them I was particularly bad at! Let's discuss what makes a great developer,
+        how to keep your eyes on the prize, and how to eventually become a Grand Master. </p>
+        <hr /><br />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4 id="monitoring-all-the-things-with-prometheus-and-grafana">Monitoring all the things with Prometheus and Grafana</h4>
+        <p>Can you see at a glance how much memory, CPU, disk &amp; bandwidth your applications are using across your servers? What about your databases and cache servers.. or even air quality? Let’s discuss Prometheus and Grafana so you can catch problems before they happen, thus achieving monitoring nirvana.</p>
+        <p>Open source application <a href="https://prometheus.io/">Prometheus</a> provides a way for you to view and set alerts on anything you could possibly imagine. By adding two lines to your dot net  application you can easily start monitoring your memory usage, API response times, CPU utilization and thread count. Using <a href="https://grafana.com/">Grafana</a> you can establish a baseline and set up alerts that won’t become annoying! You’ll get insights into the day-to-day running of your application to see what is being run the most often and work out where you should be concentrating your efforts to improve performance.</p>
+        <p>Once that’s established we can start talking about writing your own custom exporter to setup monitors and alerts on literally anything you can measure. If it has a number, you can monitor it.</p>
+        <hr /><br />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4 id="porting-your-aspnet-code-from-framework-to-core">Porting your ASP.NET app from Framework to Core</h4>
+        <p>Do you have a framework application that you want to move to dotnet core? Does it seem like a massive, difficult and error-prone undertaking? Let’s discuss techniques for porting your application, taking small steps at a time, to reduce risk and end up with all the new dotnet core goodness.</p>
+        <p>Moving your framework application to dotnet core doesn’t have to be a dangerous experiment. By slowly moving your application across, one class at a time, you can make life easy for yourself, your users and your application. In this talk we will discuss:</p>
+        <ul>
+  <li>Migrating Entity Framework to EF Core</li>
+  <li>Utilising dotnet standard</li>
+  <li>Wrapping full-framework only libraries</li>
+  <li>Bundling JS + CSS</li>
+  <li>HtmlHelpers vs TagHelpers</li>
+  <li>Error handling</li>
+  <li>Session state</li>
+  <li>Caching</li>
+  <li>Antiforgery Tokens</li>
+  <li>Authorisation</li>
+  <li>SOAP</li>
+  <li>WebApi</li>
+</ul>
+        <p>Plus a myriad of techniques to make sure everything continues to work as before!</p>
+        <hr /><br />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4 id="introduction-to-docker">Introduction To Docker</h4>
+        <p>With the launch of cross-platform DotNet Core, it's now possible for dotnet applications
+        to be deployed to linux! But how can we do this easily and without worrying about environment
+        setup and nasty dependency libraries?</p>
+        <p>Docker provides the ability for us to quickly deploy extremely small, "vm-like" application packages,
+        named images. These can be started up in less than a second, unlike a traditional Virtual Machine.
+        However wrapping your head around Docker can be a difficult and daunting task. Come and here
+        Lachlan simply explain, and more importantly show, what Docker is and how it can simplify your deployments.
+
+            </p>
+        <hr /><br />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4 id="how-to-get-things-changed-at-your-company">How to get things changed at your company</h4>
+        <p>As the logical, consistent and reasonable (ahem...) lot that us software developers are, we often expect
+        everything else to be the same. Sadly, the world is not like that. Developers often butt heads 
+        with "Company Inertia" - the ability for a company to change their processes and practices quickly. 
+        This can lead to huge frustration, anger, cynicism and even despondence when it comes to our every-day job.</p>
+        
+        <p>However, these can be worked around! With a bit of basic psychology, understanding of human
+        nature and a whole lot of patience, there are plenty of tools and tips we can use to get
+        things improved for the better. Come and hear from Lachlan what he has learnt. </p>
+        <hr /><br />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4 id="zero-downtime-deploys">Zero downtime deploys</h4>
+        <p>Do your deployments result in downtime for your users? Are updates to your app done on the
+        weekend or late at night to avoid upsetting them? Zero downtime deployments mean that
+        your users won't even notice that the system has been updated. This is the final piece 
+        of your automated-deploy nirvana. Come and hear from Lachlan how to achieve this.
+
+        </p>
+        <hr /><br />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <h4 id="typescript-in-the-real-world">Typescript in the real world</h4>
+        <p>After porting all of a large application's Javascript code to Typescript, I was 
+        shocked to find just how much I'd been missing out in terms of general maintainability
+        and productivity. Typescript provides the ability to add Types to javascript, so
+        that code can be more easily written and refactored. Come and hear what I've discovered
+        over the past 2 years of retrofitting typescript to a 5 year old application.
+        </p>
+        <hr /><br />
+    </div>
+</div>

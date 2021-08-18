@@ -1,7 +1,8 @@
 ---
-layout: post
 date:   2021-06-02 15:54:08 +1000
-categories: blog technical csharp dotnet docker linux
+category: technical
+tags: dotnet docker linux c#
+layout: post 
 ---
 
 <p>A few months back, I decided to convert an existing .NET core application to run on Linux. As part of this work, I decided to run it inside a Docker container, which meant I could have my application running on Linux without worrying about setting up all of the dependencies on the server like .NET runtime, Apache, etc.</p>
@@ -180,12 +181,13 @@ AddAuthentication(Action&lt;AuthenticationOptions&gt; configureOptions).
 <h3 id="https-and-certs">HTTPS and Certificates</h3>
 <p>Linux and Windows handle certificate trusting differently. One of the API’s that I’m calling had a certificate that used older ciphers. Apparently, in windows this was fine, but inside Linux, this was not fine and the SSL connection was rejected. I ended up having to modify the runtime openssl configuration inside the Docker container:</p>
 
-<pre><code class="hljs">RUN sed 's/<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3e7a7b787f6b726a7e6d7b7d727b687b72">[email&#160;protected]</a>=2/<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b1f5f4f7f0e4fde5f1e2f4f2fdf4e7f4fd">[email&#160;protected]</a>=1/' \
+```
+RUN sed 's/DEFAULT@SECLEVEL=2/DEFAULT@SECLEVEL=1/' \
       /etc/ssl/openssl.cnf > /etc/ssl/openssl.cnf.changed && \
     sed 's/TLSv1.2/TLSv1.1/' /etc/ssl/openssl.cnf.changed \ 
       /etc/ssl/openssl.cnf.changed2 && \
     mv /etc/ssl/openssl.cnf.changed2 /etc/ssl/openssl.cnf 
-</code></pre>
+```
     
 <p>Yikes. Isn't it great how docker simplifies things?</p>
 

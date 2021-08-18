@@ -19,21 +19,59 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Lachlan (Rocklan) Barclay's Test Jekyll Blog
+author: Lachlan Barclay
+
+navbar-links:
+  About Me: "about"
+  Blog: "/"
+#  Resources:
+#    - Beautiful Jekyll: "https://beautifuljekyll.com"
+#    - Learn markdown: "https://www.markdowntutorial.com/"
+  Tags: "/tags"
+  Workshops: "https://dotnetworkshops.com"
+
+avatar: "/images/headshot.jpg"
+
+# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+round-avatar: true
+
+social-network-links:
+  email: "clockwise.music@gmail.com"
+  github: rocklan
+  twitter: rocklan
+
+share-links-active:
+  twitter: true
+  facebook: false
+  linkedin: false
+  vk: false
+
 email: clockwise.music@gmail.com
 permalink: /:year/:month/:slug
 description: >- # this means to ignore newlines until "baseurl:"
   Tech blog for Lachlan Barclay.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rocklan
-github_username:  rocklan
+
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-remote_theme: zivong/jekyll-theme-hydure
+remote_theme: daattali/beautiful-jekyll
 
 # Exclude from processing.
 # The following items will not be processed, by default.
