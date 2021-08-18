@@ -22,8 +22,6 @@
     position: relative;
 }
 
-@media (min-width: 1200px) {
-    .intro-header.big-img {
-        margin-top: 0rem;
-    }
+.intro-header.big-img {
+    margin-top: 0rem;
 }
