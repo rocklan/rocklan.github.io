@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Lachlan (Rocklan) Barclay's Test Jekyll Blog
+title: Lachlan (Rocklan) Barclay's Blog
 author: Lachlan Barclay
 
 navbar-links:
@@ -51,7 +51,7 @@ permalink: /:year/:month/:slug
 description: >- # this means to ignore newlines until "baseurl:"
   Tech blog for Lachlan Barclay.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://lachlanbarclay.net" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 navbar-col: "#EAEAEA"
@@ -72,6 +72,8 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 remote_theme: daattali/beautiful-jekyll
+
+paginate: 10
 
 # Exclude from processing.
 # The following items will not be processed, by default.

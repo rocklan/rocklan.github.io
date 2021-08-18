@@ -1,8 +1,9 @@
 ---
-date:   2021-06-02 15:54:08 +1000
+date:   2021-06-02
 category: technical
 tags: dotnet docker linux c#
-layout: post 
+readtime: true
+cover-img: https://static.lachlanbarclay.net/pics/moving-to-linux-7.png
 ---
 
 <p>A few months back, I decided to convert an existing .NET core application to run on Linux. As part of this work, I decided to run it inside a Docker container, which meant I could have my application running on Linux without worrying about setting up all of the dependencies on the server like .NET runtime, Apache, etc.</p>

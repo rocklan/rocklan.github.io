@@ -296,3 +296,8 @@ figcaption.align-center { text-align: center; }
   .highlight .na { color: #b8bb26; }
   .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx { color: #d3869b; }
   .highlight .ss { color: #83a598; } }
+
+.post-heading {
+  background: rgba(0,0,0,0.5);
+  padding: 50px;
+}

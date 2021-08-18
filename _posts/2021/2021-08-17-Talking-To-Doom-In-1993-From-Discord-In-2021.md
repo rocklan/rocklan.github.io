@@ -1,11 +1,10 @@
 ---
-date:   2021-08-17 15:54:08 +1000
+date:   2021-08-17
 category: technical
 tags: discord c# dotnet zandronum udp nuget 
 cover-img: /images/doomguys.png
 readtime: true
 ---
-
 Did you know that multiplayer doom is still alive and kicking? Nope, not Doom Eternal. Not 2016 Doom.. but 1993 doom! Thanks to the legends who work on [Zandronum](https://zandronum.com), you can play deathmatch or co-operative play over the internet using the original doom engine. Except the engine has been improved for the modern age - 3D acceleration, higher resolutions, transparency, better lighting effects... it's still the original Doom, just *more awesomer*:
 
 ![image-title-here](/images/zandronum-aa.png){:class="img-responsive"}
