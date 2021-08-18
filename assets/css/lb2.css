@@ -17,3 +17,13 @@
     max-height: 100%;
     margin-bottom: 0.5em;
   }
+
+.fixed-top {
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    .intro-header.big-img {
+        margin-top: 0rem;
+    }
+}
