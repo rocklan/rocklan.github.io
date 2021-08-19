@@ -17,3 +17,11 @@
     max-height: 100%;
     margin-bottom: 0.5em;
   }
+
+.fixed-top {
+    position: relative;
+}
+
+.intro-header.big-img {
+    margin-top: 0rem;
+}

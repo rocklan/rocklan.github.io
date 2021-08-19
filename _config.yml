@@ -39,11 +39,14 @@ social-network-links:
   email: "clockwise.music@gmail.com"
   github: rocklan
   twitter: rocklan
+  linkedin: lachlanb
 
+rss-description: Lachlan (Rocklan's) Barclay's Blog
+remove-ads: true
 share-links-active:
   twitter: true
   facebook: false
-  linkedin: false
+  linkedin: true
   vk: false
 
 email: clockwise.music@gmail.com
