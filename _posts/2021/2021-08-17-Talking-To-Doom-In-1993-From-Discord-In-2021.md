@@ -3,6 +3,7 @@ date:   2021-08-17
 category: technical
 tags: discord c# dotnet zandronum udp nuget 
 cover-img: /images/doomguys.png
+thumbnail-img: /images/doomguys-thumb.png
 readtime: true
 ---
 

@@ -3,6 +3,7 @@ date:   2020-09-24
 category: technical
 tags: dotnet dotnetframework dotnetcore workshop popular
 cover-img: /images/porting-talk.png
+thumbnail-img: /images/porting-talk-thumb.png
 readtime: true
 ---
 

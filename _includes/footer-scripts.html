@@ -1,0 +1,9 @@
+{% if page.js %}
+  {% for js in page.js %}
+    <script src="{{ js | relative_url }}"></script>
+  {% endfor %}
+{% endif %}
+{% assign cacheBust = site.time | date:'?v=%s' %}
+<script src="{{ "/assets/js/bundle.js" | relative_url | append: cacheBust }}"></script>
+
+
