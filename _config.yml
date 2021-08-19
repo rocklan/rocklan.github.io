@@ -53,7 +53,7 @@ share-links-active:
 email: clockwise.music@gmail.com
 permalink: /:year/:month/:slug
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://rocklan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://lachlanbarclay.net" # the base hostname & protocol for your site, e.g. http://example.com
 
 navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
