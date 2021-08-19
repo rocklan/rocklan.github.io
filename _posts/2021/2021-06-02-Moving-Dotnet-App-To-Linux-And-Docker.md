@@ -1,7 +1,7 @@
 ---
 date:   2021-06-02
 category: technical
-tags: dotnet docker linux c# popular
+tags: dotnet docker linux c#
 readtime: true
 cover-img: https://static.lachlanbarclay.net/pics/moving-to-linux-7.png
 ---
