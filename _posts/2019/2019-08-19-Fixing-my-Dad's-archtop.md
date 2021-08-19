@@ -54,7 +54,7 @@ Now because the pickup needed two 9v batteries, instead of adding a large cavity
 
 <p>I couldn't think of what else to do, so I took all of the electronics out of the guitar just to see if I could make the pickup work. I soldered the pickup to a new volume knob, put two batteries in series, held the pickup above some guitar strings, and to my great surprise, it worked! Here's a quick video showing it up and running:</p>
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/f703nLXr4rY' frameborder='0' allowfullscreen></iframe></div>
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/f703nLXr4rY' frameborder='0' allowfullscreen></iframe></div>
 
 <br />
 <p>So the pickup wasn't stuffed. Great news. Now to make it work.</p>
@@ -73,6 +73,7 @@ Now because the pickup needed two 9v batteries, instead of adding a large cavity
 
 <p>Then time for the final test:</p>
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/n6yWGZISJzQ' frameborder='0' allowfullscreen></iframe></div>
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/n6yWGZISJzQ' frameborder='0' allowfullscreen></iframe>
+
 <br /><br />
 <p>What a stroke of luck, it actually works! I almost gave up about 5 times while working on this project, but I got there in the end. Now to start learning how to play jazz :) </p>

@@ -8,7 +8,7 @@ readtime: true
 
 I recently gave a talk (over zoom) about moving your Asp.Net Framework application to .NET Core. After moving a bunch of my own applications, I realised that there was an easy road to take, and a hard road to take. Moving your application doesn’t have to be a dangerous experiment. By slowly moving your application across, one class at a time, you can make life easy for yourself and your users.
 
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/ectRj0SBJsw' frameborder='0' allowfullscreen></iframe></div>
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/ectRj0SBJsw' frameborder='0' allowfullscreen></iframe></div>
 
 If you're interested in this topic or need to do it yourself I run a workshop titled [Porting Your Framework App To Dotnet Core](https://dotnetworkshops.com/workshops/porting-your-aspnet-app-from-framework-to-core). It's pretty good fun, and in it I cover a bunch of stuff:
 
