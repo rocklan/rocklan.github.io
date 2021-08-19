@@ -2,7 +2,7 @@
 date: 2015-08-27
 category: technical
 readtime: true
-tags: craftsmanship
+tags: craftsmanship popular
 ---
 <p>To kick off this blog, I think that I need to state the following:</p>
 

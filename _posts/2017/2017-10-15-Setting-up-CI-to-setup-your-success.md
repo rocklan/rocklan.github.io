@@ -3,7 +3,7 @@ date: 2017-10-15
 category: technical
 readtime: true
 cover-img: https://static.lachlanbarclay.net/pics/catlight.png
-tags: cicd ci deploys devops
+tags: ci deployments devops craftsmanship popular
 ---
 <p>Does your build save you time and effort? Or does everyone emit a collective groan whenever you hear the dreaded <b>"Someone broke the build"</b> ? A great build setup you will love, a bad setup you will hate. How do you get started and where do you want to end up?</p>
 <img data-src="https://static.lachlanbarclay.net/pics/BuildServers.png" alt="Build servers" class="img-responsive lazyload" />

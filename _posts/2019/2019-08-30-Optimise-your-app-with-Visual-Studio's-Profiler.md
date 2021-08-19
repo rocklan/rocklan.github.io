@@ -2,7 +2,7 @@
 date: 2019-08-30
 category: technical
 readtime: true
-tags: performance c# optimisation visualstudio workshop
+tags: performance c# optimisation visualstudio workshop popular
 cover-img: https://static.lachlanbarclay.net/pics/performance/MostBusyFunctions.png
 ---
 

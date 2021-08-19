@@ -1,6 +1,6 @@
 ---
 date: 2015-03-02
-category: technical
+category: technical popular
 readtime: true
 ---
 Someone asked me on Sunday if it would be possible to generate a PDF that had a barcode in it. I haven't generated a "normal" boring 2D barcode before, so I thought I'd give it a crack. I find a library named <a href="https://barcoderender.codeplex.com">Barcode Rendering Framework</a>, downloaded it, looked for the documentation on how to use it... and there isn't <b>any</b>. 

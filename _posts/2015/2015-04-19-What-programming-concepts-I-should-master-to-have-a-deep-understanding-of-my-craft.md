@@ -2,7 +2,7 @@
 date: 2015-04-19
 category: technical
 readtime: true
-tags: craftsmanship
+tags: craftsmanship popular
 ---
 So you’ve been working as a programmer for a couple of years, and you want to become a good programmer. But not just a good programmer, you want to be a GREAT programmer. You want to paint with ALL the colors. Hell, you want to paint with all the dimensions. You want to be the GURU of programming – not just some nerd that’s stuck in corner that knows every namespace in the .NET API and can punch out a website in a day – you want to be a Michelangelo. A Picasso. Programming isn’t a science, it’s an art. You want to be respected.
 <br /><br />

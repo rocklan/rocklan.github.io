@@ -3,7 +3,7 @@ date: 2017-12-13
 category: technical
 readtime: true
 cover-img: https://static.lachlanbarclay.net/pics/bluegreen/8-antiforgery.png
-tags: deployments aspnet iis 
+tags: deployments iis 
 ---
 
 <p>Did you know that you can have zero downtime deployments with your ASP.NET application? 
