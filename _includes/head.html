@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' stackpath.bootstrapcdn.com cdnjs.cloudflare.com fonts.googleapis.com; script-src 'self' code.jquery.com cdn.jsdelivr.net stackpath.bootstrapcdn.com; img-src 'self' static.lachlanbarclay.net; font-src fonts.gstatic.com cdnjs.cloudflare.com; frame-src https://www.youtube.com">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' stackpath.bootstrapcdn.com cdnjs.cloudflare.com fonts.googleapis.com; script-src 'self' code.jquery.com cdn.jsdelivr.net stackpath.bootstrapcdn.com www.google-analytics.com; img-src 'self' static.lachlanbarclay.net; font-src fonts.gstatic.com cdnjs.cloudflare.com; frame-src https://www.youtube.com; connect-src https://www.google-analytics.com">
   
     {% capture title %}
       {%- if page.share-title -%}
@@ -149,7 +149,9 @@
     {% endif %}
 
     <script async src="/assets/js/lazysizes.5.2.0.min.js"></script>
-    <script async src="/assets/js/extrastuff.js"></script>
-    <link rel="stylesheet" href="{{ "/assets/css/lb3.css" | relative_url }}">
+
+    {% assign cacheBust = site.time | date:'?v=%s' %}
+    <script async src="{{ "/assets/js/extrastuff.js" | relative_url | append: cacheBust }}"></script>
+    <link rel="stylesheet" href="{{ "/assets/css/lb.css" | relative_url | append: cacheBust }}">
   </head>
   
