@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' stackpath.bootstrapcdn.com cdnjs.cloudflare.com fonts.googleapis.com; script-src 'self' www.google-analytics.com; img-src 'self' data: static.lachlanbarclay.net; font-src fonts.gstatic.com cdnjs.cloudflare.com; frame-src https://www.youtube.com; connect-src https://www.google-analytics.com">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' fonts.googleapis.com; script-src 'self' www.google-analytics.com; img-src 'self' data: static.lachlanbarclay.net; font-src 'self' fonts.gstatic.com; frame-src https://www.youtube.com; connect-src https://www.google-analytics.com">
   
     {% capture title %}
       {%- if page.share-title -%}
@@ -41,12 +41,9 @@
     {% endif %}
   
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
-  
-    {% include gtag.html %}
-    {% include gtm_head.html %}
-    {% include google_analytics.html %}
-    {% include cloudflare_analytics.html %}
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
     {% if layout.common-ext-css %}
       {% for css in layout.common-ext-css %}
         {% include ext-css.html css=css %}
@@ -139,7 +136,7 @@
     {% include matomo.html %}
 
     {% assign cacheBust = site.time | date:'?v=%s' %}
-    <link rel="stylesheet" href="{{ "/assets/css/lb.css" | relative_url | append: cacheBust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/bundle.css" | relative_url | append: cacheBust }}">
   
     {% if page.head-extra %}
       {% for file in page.head-extra %}

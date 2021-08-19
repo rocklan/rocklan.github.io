@@ -1,0 +1,49 @@
+.post-heading > h1 {
+    background: rgba(0,0,0,0.60);
+    padding: 50px;
+    color: white;
+}
+
+.page-heading > h1 {
+  background: rgba(0,0,0,0.60);
+  padding: 50px;
+  color: white;
+}
+
+.postsbyyear li {
+    font-size: 1.0rem;
+}
+
+.postsbyyear h3 { 
+  padding-top: 2.0rem;
+}
+
+.post-preview .post-image-small img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 0.5em;
+}
+
+.fixed-top {
+    position: relative;
+}
+
+.intro-header.big-img {
+    margin-top: 0rem;
+}
+
+.fourohfour {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+.fourohfour h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* Let's make youtube embeds responsive */
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
