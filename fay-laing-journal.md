@@ -5,6 +5,8 @@ readtime: true
 published: true
 title: Fay Laing's Journal
 layout: page
+share-description: Fay Laing's recollections about growing up in Melbourne in the 1930's
+thumbnail-img: /images/fay-young-thumbnail.JPG
 ---
 
 ![image-title-here](/images/fay-young.jpg){:class="img-responsive"}
