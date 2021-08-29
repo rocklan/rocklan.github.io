@@ -1,0 +1,27 @@
+{
+  "name": "rocklan.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocklan/rocklan.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocklan/rocklan.github.io/issues"
+  },
+  "homepage": "https://github.com/rocklan/rocklan.github.io#readme",
+  "devDependencies": {
+    "grunt": "~0.4.*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "^1.1.0",
+    "matchdep": "*"
+  }
+}
