@@ -5,7 +5,6 @@ readtime: true
 published: true
 title: Trivia Night
 layout: page
-thumbnail-img: /images/fay-young-thumbnail.JPG
 cover-img: /images/doom-eviternity.png
 thumbnail-img: /images/doom-eviternity-thumb.png
 ext-css: /assets/css/trivia.css
