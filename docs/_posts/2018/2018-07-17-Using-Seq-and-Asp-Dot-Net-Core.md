@@ -3,7 +3,7 @@ date: 2018-07-17
 category: technical
 readtime: true
 tags: seq c# dotnet logging
-cover-img: https://static.lachlanbarclay.net/pics/SeqLogging1.png
+cover-img: /pics/SeqLogging1.png
 ---
 
 <p>I am unabashed in how awesome I think <a href="https://getseq.net/">Seq</a> is. For troubleshooting stuff in production, this thing is a goldmine. Let's say I have some code:</p>
@@ -20,7 +20,7 @@ int result = Divide(10, 5);
 
 <p>With Seq it's extremely easy to add some logging that gives you all the information you need to troubleshoot this function when it's running in production:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/SeqLogging1.png" class="img-responsive lazyload" />
+<img data-src="/pics/SeqLogging1.png" class="img-responsive lazyload" />
 
 <p>I won't go into any more detail about Seq, you can <a href="https://getseq.net/">read about it yourself</a>, so here's how I set it up.</p>
 
@@ -235,7 +235,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 <p>Which means you'll get some lovely error handling in your logs:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/SeqLogging2.png" class="img-responsive lazyload" />
+<img data-src="/pics/SeqLogging2.png" class="img-responsive lazyload" />
 
 <h3>Request Input Validation and Logging</h3>
 
@@ -320,7 +320,7 @@ public void ConfigureServices(IServiceCollection services)
 <br />
 <p>Anyway, you will now log lovely validation messages:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/SeqLogging3.png" class="img-responsive lazyload" />
+<img data-src="/pics/SeqLogging3.png" class="img-responsive lazyload" />
 
 <h3>Is that it?</h3>
 

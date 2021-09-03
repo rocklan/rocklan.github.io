@@ -2,7 +2,7 @@
 date: 2016-03-17
 category: technical
 readtime: true
-cover-img: https://static.lachlanbarclay.net/pics/nuget.png
+cover-img: /pics/nuget.png
 tags: nuget c#
 ---
 Within your organisation you probably have shared code that is common across multiple projects? You know, code that does boring stuff like sending an email, error message logging or generating a nice bit of HTML. 
@@ -25,7 +25,7 @@ But isn't NuGet what Visual Studio uses for managing external, public packages? 
 
 It's all quite easy to setup, and once you do, you'll end up with something like so:
 
-<img src="https://static.lachlanbarclay.net/pics/nuget.png" class="img-responsive" alt="manage packages screenshot" />
+<img src="/pics/nuget.png" class="img-responsive" alt="manage packages screenshot" />
 
 <h2>Setting it up</h2>
 
@@ -95,21 +95,21 @@ Let's say that we are sending emails from five different applications, and we wi
 
 First off, create your solution, add the above class and then compile your project. You should have something like this:
 
-<img src="https://static.lachlanbarclay.net/pics/nugetsolution.png" class="img-responsive" alt="new solution with emailer code" />
+<img src="/pics/nugetsolution.png" class="img-responsive" alt="new solution with emailer code" />
 
 Two important points to note. The first one is that you want to edit your <b>Properties/AssemblyInfo.cs</b> file and enter a description for your assembly. You also want to update the <b>Company name</b>, <b>Title</b> and <b>Author</b> if it's not  correct.
 
-<img src="https://static.lachlanbarclay.net/pics/nuget-assemblyinfo.png" class="img-responsive" alt="new solution with emailer code" />
+<img src="/pics/nuget-assemblyinfo.png" class="img-responsive" alt="new solution with emailer code" />
 
 The second point to note is to make sure you enable XML comment file generation so that once you have installed your NuGet package, you will receive intellisense! Make sure to <b>change the extension .XML to lower case!</b>
 
-<img src="https://static.lachlanbarclay.net/pics/nuget-enabling-xml-intellisense.png" class="img-responsive" alt="new solution with emailer code" />
+<img src="/pics/nuget-enabling-xml-intellisense.png" class="img-responsive" alt="new solution with emailer code" />
 
 Great. Now we have our project all ready to be nugetified. Next, install the NuGet <a target="_blank" href="https://docs.nuget.org/consume/command-line-reference">Command line tools</a>. Then within the command line, move to the directory where your <b>.csproj</b> file is and enter the following command:
 
 <pre><code>nuget spec</code></pre>
 
-<img src="https://static.lachlanbarclay.net/pics/nugetspec.png" class="img-responsive" alt="nuget spec" />
+<img src="/pics/nugetspec.png" class="img-responsive" alt="nuget spec" />
 
 This will create a new file named MyCompany.WebCommon.nuspec, and it should look something like the following:
 
@@ -140,7 +140,7 @@ Now <b>Make sure you have already compiled your project</b>, and then issue the 
 
 <pre>NuGet Pack</pre>
 
-<img src="https://static.lachlanbarclay.net/pics/nugetpack.png" class="img-responsive" alt="nuget spec" />
+<img src="/pics/nugetpack.png" class="img-responsive" alt="nuget spec" />
 
 This will create a new file named <b>MyCompany.WebCommon.1.0.0.0.nupkg</b> - woo your first package.
 
@@ -160,38 +160,38 @@ Well, you might as well just <a target="_blank" href="https://docs.nuget.org/cre
 
 Now that you've got your own private NuGet repo up and running, simply add it as a new package source within Visual Studio, by going to: Tools -> options -> NuGet Package Manager -> Package Sources
 
-<img src="https://static.lachlanbarclay.net/pics/nuget-addsource.png" class="img-responsive" alt="nuget adding source" />
+<img src="/pics/nuget-addsource.png" class="img-responsive" alt="nuget adding source" />
 
 Something very important to note is to add <b>/nuget</b> onto the <b>end</b> of your virtual application name!
 
 And you can now add the package to your project! Right click on your project, select Manage NuGet packages and you should see:
 
-<img src="https://static.lachlanbarclay.net/pics/nuget-installpackage.png" class="img-responsive" alt="nuget adding source" />
+<img src="/pics/nuget-installpackage.png" class="img-responsive" alt="nuget adding source" />
 
 
 Usage of this code is pretty straight forward:
 
-<img src="https://static.lachlanbarclay.net/pics/nuget-using-package.png" class="img-responsive" alt="nuget using the code" />
+<img src="/pics/nuget-using-package.png" class="img-responsive" alt="nuget using the code" />
 
 <h2>Updating your package</h2>
 
 
 The cool part is that it's very easy to view which packages are out of date and to see what's changed. Let's make a change to our SendEmail() function, by adding a new parameter named IsHtml:
 
-<img src="https://static.lachlanbarclay.net/pics/nuget-codechange.png" class="img-responsive" alt="nuget code change" />
+<img src="/pics/nuget-codechange.png" class="img-responsive" alt="nuget code change" />
 
 To update our NuGet package we simply update the AssemblyVersion and AssemblyFileVersion attributes to 1.1 (in the <b>AssemblyInfo.cs</b> file), <b>recompile our project</b>, and re-build our nuget package by the same command, "nuget pack":
 
-<img src="https://static.lachlanbarclay.net/pics/nuget-pack-new-package.png" class="img-responsive" alt="nuget new package" />
+<img src="/pics/nuget-pack-new-package.png" class="img-responsive" alt="nuget new package" />
 
 The new package has the 1.1 version number at the end. This means we can publish it to our repository and not lose our earlier version. It also means that once published, it's easy to update your code to use the new package. Simply right click on your project and go to Manage NuGet packages, and then click on the "Updates" section. From here you can see what packages have been updated along with it's release notes:
 
-<img src="https://static.lachlanbarclay.net/pics/nuget-update-package.png" class="img-responsive" alt="nuget update  package" />
+<img src="/pics/nuget-update-package.png" class="img-responsive" alt="nuget update  package" />
 
 
  Clicking update will update the package, and we can now pass through our new IsHtml parameter!
 
-<img src="https://static.lachlanbarclay.net/pics/nuget-updated-package.png" class="img-responsive" alt="nuget updated package" />
+<img src="/pics/nuget-updated-package.png" class="img-responsive" alt="nuget updated package" />
 
 
 <h2>Debugging</h2>

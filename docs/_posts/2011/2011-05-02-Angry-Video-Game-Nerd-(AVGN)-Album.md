@@ -3,7 +3,7 @@ date: 2011-05-02
 category: music
 readtime: true
 ---
-The album is done!<br /><a href="http://lachlanbarclay.bandcamp.com"><br /><img  src="https://static.lachlanbarclay.net/pics/avgn.jpg" alt="Angry Video Game Nerd AVGN Album" class="img-responsive" /></a><br /><br style='clear: both' />
+The album is done!<br /><a href="http://lachlanbarclay.bandcamp.com"><br /><img  src="/pics/avgn.jpg" alt="Angry Video Game Nerd AVGN Album" class="img-responsive" /></a><br /><br style='clear: both' />
 
 <br />Sample tracks:
 <br /><br />

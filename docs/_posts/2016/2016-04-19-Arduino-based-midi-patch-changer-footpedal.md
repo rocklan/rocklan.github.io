@@ -2,18 +2,18 @@
 date: 2016-04-19
 category: technical
 readtime: true
-cover-img: https://static.lachlanbarclay.net/pics/amplifire.png
+cover-img: /pics/amplifire.png
 tags: arduino nerdy midi
 ---
 <p>A few years ago I bought this wonderful amplifier emulator:</p>
-<img src="https://static.lachlanbarclay.net/pics/amplifire.png" class="img-responsive" alt="amplifier box" />
+<img src="/pics/amplifire.png" class="img-responsive" alt="amplifier box" />
 <p>This is a great unit for plugging your guitar directly into a PA and emulating the sound of modern guitar amplifiers. There's just one problem... it only has 3 buttons on the front!</p>
 
 <p>What I'd love is some more buttons. Fortunately this unit has a MIDI "in" plug. I could always buy a device like <a href="http://www.peak2005.com/j/index.php?id_product=8&controller=product">this one</a>... but where's the fun in that? I wonder if it would be possible to build my own?</p>
 
 <p>So, I bought a <a href="http://www.ebay.com.au/itm/UNO-R3-Board-Ultimate-kit-MEGA328P-ATMEGA16U2-Arduino-Compatible-Melbourne-stock-/321904025393">simple arduino kit</a> and started trying to piece something together. What I wanted to build was a device that has two buttons, one for patch change "next" and one for patch change "previous", and another that displays the current patch number in a 7-segment display. Fortunately I've done a little bit of electronics in my life, so I managed to build a prototype: </p>
 
-<img src="https://static.lachlanbarclay.net/pics/MidiPatchChangerSchematic.png" class="img-responsive" />
+<img src="/pics/MidiPatchChangerSchematic.png" class="img-responsive" />
 
 <p>The code is written in some <a href="https://en.wikipedia.org/wiki/Processing_(programming_language)">weird variant of c named 'processing'</a>, and I've put up my <a href="https://github.com/rocklan/arduino-midi">code on github</a>. So here's the first attempt at hooking it up to my old POD HD500 pedal:</p>
 <br />

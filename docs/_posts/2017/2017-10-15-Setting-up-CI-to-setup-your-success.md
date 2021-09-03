@@ -2,12 +2,12 @@
 date: 2017-10-15
 category: technical
 readtime: true
-cover-img: https://static.lachlanbarclay.net/pics/catlight.png
+cover-img: /pics/catlight.png
 tags: ci deployments devops craftsmanship popular
 title: Setting Up CI To Setup Your Success
 ---
 <p>Does your build save you time and effort? Or does everyone emit a collective groan whenever you hear the dreaded <b>"Someone broke the build"</b> ? A great build setup you will love, a bad setup you will hate. How do you get started and where do you want to end up?</p>
-<img data-src="https://static.lachlanbarclay.net/pics/BuildServers.png" alt="Build servers" class="img-responsive lazyload" />
+<img data-src="/pics/BuildServers.png" alt="Build servers" class="img-responsive lazyload" />
 
 <h2>Fundamentals</h2>
 
@@ -25,7 +25,7 @@ title: Setting Up CI To Setup Your Success
 
 <p>Get this working!</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/checkoutdiagram.png" alt="diagram of source code checkouts" class="img-responsive lazyload" />
+<img data-src="/pics/checkoutdiagram.png" alt="diagram of source code checkouts" class="img-responsive lazyload" />
                        
 <p>Whenever you check in some code (or push it to your source control) your build server needs to be able to check out the same source code onto the build server. While this sounds like a simple step often it isn't! First off you need to be <a href="https://softwareengineering.stackexchange.com/questions/112270/is-it-unusual-for-a-small-company-15-developers-not-to-use-managed-source-vers">actually <b>using</b> source control</a>, and second off you need to get the credentials sorted out. What user will check out the code? Is network access established between your build server and your source code server? Is the source code too large to completely check out? Once you've sorted out these issues you should be able to check in some code and your build server should start checking it out as soon as it can. Ideally it would use a hook to be notified whenever code is checked in but sometimes (or initially) polling is the easiest way to get started.</p>
 
@@ -48,13 +48,13 @@ title: Setting Up CI To Setup Your Success
 <h3>Notifications</h3>
 
 
-<img data-src="https://static.lachlanbarclay.net/pics/catlight.png" alt="catlight screenshot" class="img-responsive lazyload" />
+<img data-src="/pics/catlight.png" alt="catlight screenshot" class="img-responsive lazyload" />
 
 <p>There's no point in having an automated build going that compiles your code upon check in if nobody knows when the build is failing. Classically people setup email notifications but they are generally a pain in the neck. A better approach would be to use an app that everybody installs onto their machine that pops up a notification whenever the build fails, or perhaps your IDE has way of doing this. There might be an extension for your IDE that provide this functionality like <a href="https://marketplace.visualstudio.com/items?itemName=AlonAmsalem.AnyStatus">AnyStatus for Visual Studio</a> or <a href="https://www.eclipse.org/hudson/the-hudson-book/book-hudson.chunked/ch10.html">Sonatype for Eclipse</a>.</p>
 
 <p>An even better approach is for your build server to automatically post something in your collaboration software like Slack or Hipchat. If you setup a dedicated channel for your app and send notifications there, they won't clog up people's inbox, and people can subscribe to that channel whenever they are working on the build. It should look something like this:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/channelnotifications.png" alt="channel notifications" class="img-responsive lazyload" />
+<img data-src="/pics/channelnotifications.png" alt="channel notifications" class="img-responsive lazyload" />
 
 <p>A closer look at this screenshot shows a couple of useful details. First off, as soon as the build is completed a message is posted to the channel. This is great so that everybody in the team gets immediate feedback. If the build fails, it's shown in red. You can see which unit tests passed and which failed.</p>
 
@@ -73,7 +73,7 @@ title: Setting Up CI To Setup Your Success
 <h3>Unit Tests</h3>
 
 
-<img data-src="https://static.lachlanbarclay.net/pics/unittests.png" alt="Unit test results" class="img-responsive lazyload" />
+<img data-src="/pics/unittests.png" alt="Unit test results" class="img-responsive lazyload" />
 
 <p>Your next step is to be running your unit tests upon each checkin. This step also isn't as simple as it may sound. Do you actually have any unit tests? You'll probably need to write some and start training up your team in the art to writing unit tests. They also need to run pretty quickly and not depend on external services or databases. They also need to be able to run concurrently and not take up a mountain of CPU. What I have found is that if the unit test takes longer than 200ms you're probably doing it wrong. Unit tests need to test your code, and nothing else. Just one function. This is a huge hurdle for many and requires a large shift in thinking. People who were used to writing spaghetti code with many dependencies need to learn how to simplify their code and write stuff that can actually be tested. <b>This is difficult and is not easy</b>, and deserves a separate post.</p>
 
@@ -94,7 +94,7 @@ title: Setting Up CI To Setup Your Success
 
 <p>How much of your actual code is covered by unit tests? There's no point in having 500 tests if you're only testing 5% of your actual code. Displaying what code is actually covered by your tests can be super useful. You can use <a href="https://github.com/OpenCover/opencover">Open Cover</a> for .NET and generate some fantastic reports like so:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/coverage.png" class="img-responsive lazyload" alt="code coverage results" />
+<img data-src="/pics/coverage.png" class="img-responsive lazyload" alt="code coverage results" />
 
 <p>Here you can see that the getter for <b>Age</b> is being called as part of our unit tests. So is the setter, but if we try to set the age to be above the MAX_AGE (when the configuration isn't null), there's no unit test for that! And yes, this is a real-life bit of production code... hmm, better go add another test! Oh and as an aside, please don't aim for 100% coverage... just <a href="https://martinfowler.com/bliki/TestCoverage.html">test the stuff that worries you</a>.</p> 
 
@@ -106,7 +106,7 @@ title: Setting Up CI To Setup Your Success
 <h3>Branches</h3>
 
 
-<img data-src="https://static.lachlanbarclay.net/pics/branching.png" alt="feature branch building" class="img-responsive lazyload" />
+<img data-src="/pics/branching.png" alt="feature branch building" class="img-responsive lazyload" />
 
 <p>Do you work in feature branches? Do you have release branches? Is your build server building your branches and not just the mainline? This can also be tricky to setup, but super useful. Jenkins has the new wonderful multibranch pipeline that is awesome once you wrap your head around it.</p>
 
@@ -123,7 +123,7 @@ title: Setting Up CI To Setup Your Success
 <h3>Code security</h3>
 
 
-<img data-src="https://static.lachlanbarclay.net/pics/owasp2.jpg" alt="owasp logo" class="img-responsive lazyload" />
+<img data-src="/pics/owasp2.jpg" alt="owasp logo" class="img-responsive lazyload" />
 
 <p>SonarQube provides a few security metrics and tells you if you're doing something silly like using a very old and broken encryption protocol. But what about finding other security holes in your app? Often they can't immediately be determined just by looking at the actual source code and need to scan the running application itself. <a href="https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project">oWASP ZAP</a> is a great example of this and can be integrated into your build pipeline.</p>
 
@@ -139,7 +139,7 @@ title: Setting Up CI To Setup Your Success
 
 <p>It's all well and good having unit tests, which are there to see if someone has accidentally changed the output of a function. But what if someone messes up your HTML and breaks your entire app? You don't have a test for that, do you?</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/phantomjs-logo.png" alt="phantomjs logo" class="img-responsive lazyload" />
+<img data-src="/pics/phantomjs-logo.png" alt="phantomjs logo" class="img-responsive lazyload" />
 
 <p>You can use <a href="http://www.seleniumhq.org/">selenium</a> to automate a browser and test your app upon checkin. This can be fiddly and difficult, but boy will it catch a lot of problems. Alternatively you can use a headless browser like <a href="http://phantomjs.org/">PhantomJS</a> and control it via a scripting language.  If you can setup a bunch of nice automated UI tests they can also save you in going over the top and writing too many unit tests. They don't replace unit tests, but can provide a wonderful safety net for your app.</p>
 
@@ -159,7 +159,7 @@ title: Setting Up CI To Setup Your Success
 
 <p>Over the years I've found the most important thing is to keep your build <b>fast</b>. If it's taking longer than a few minutes people will get bored & frustrated with it. You need to break it down to many small tasks and have it fail as early and as quick as possible. Your CI software might even support breaking down your build into individual steps like so:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/buildsteps.png" class="img-responsive lazyload" alt="jenkins build steps" />
+<img data-src="/pics/buildsteps.png" class="img-responsive lazyload" alt="jenkins build steps" />
 
 <p>If your build is taking more than a few minutes, you could then break down into separate jobs like so:</p>
 
@@ -174,7 +174,7 @@ title: Setting Up CI To Setup Your Success
 <h2>On the way to awesomeness!</h2>
 
 
-<img data-src="https://static.lachlanbarclay.net/pics/you-dont-need-permission.jpg" class="img-responsive lazyload" alt="You don't need permission to be awesome!" />
+<img data-src="/pics/you-dont-need-permission.jpg" class="img-responsive lazyload" alt="You don't need permission to be awesome!" />
 
 <p>(Many thanks to <a href="http://reverentgeek.com">Reverent Geek</a> for the cool image)</p>
 

@@ -3,7 +3,7 @@ date:   2021-06-02
 category: technical
 tags: dotnet docker linux c#
 readtime: true
-cover-img: https://static.lachlanbarclay.net/pics/moving-to-linux-7.png
+cover-img: /pics/moving-to-linux-7.png
 ---
 
 <p>A few months back, I decided to convert an existing .NET core application to run on Linux. As part of this work, I decided to run it inside a Docker container, which meant I could have my application running on Linux without worrying about setting up all of the dependencies on the server like .NET runtime, Apache, etc.</p>
@@ -14,7 +14,7 @@ cover-img: https://static.lachlanbarclay.net/pics/moving-to-linux-7.png
 
 <p>But unlike communism, in the end, this worked! Here’s the output from my web application showing some server details. Notice any differences?</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-0.png" alt="moving .NET application to linux 0" class="img-responsive lazyload" />
+<img data-src="/pics/moving-to-linux-0.png" alt="moving .NET application to linux 0" class="img-responsive lazyload" />
 
 <p>So with that in mind, here's a list of issues that you should probably know about.</p>
 
@@ -94,7 +94,7 @@ Getting the app to start up</h3>
 
 <p>Once I fixed my references to <code>localhost</code>, the next problem that I had was not all of my DLL’s were loading properly. At startup I would get this error:</p>
  
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-2.png" alt="moving dotnet application to linux 2" class="img-responsive lazyload" />
+<img data-src="/pics/moving-to-linux-2.png" alt="moving dotnet application to linux 2" class="img-responsive lazyload" />
  
  
 <p>For PDF management I’m using a library named <a href="https://www.websupergoo.com/abcpdf-1.aspx">AbcPdf</a>. It’s a great library with heaps of functionality that I’ve been using for years. There’s just one problem. AbcPdf isn't supported on Linux. There are just no Linux binaries, full stop. Sure, this was hidden inside their documentation somewhere, but the only way to find this out was to actually launch my application and see if it crashed at startup.</p>
@@ -114,7 +114,7 @@ This was pretty confusing, because the code worked great on Windows. (I particul
 
 <p>I chose Option 2. I refactored out all of the code to a separate application that I would run on Windows and slapped an API wrapper around it. This was a bit of work, but there wasn’t that much code there, and what was there could be pulled out pretty easily. After a day, I ended up with a nice API for creating and merging PDFs:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-3.png" alt="moving dotnet application to linux 3" class="img-responsive lazyload" />
+<img data-src="/pics/moving-to-linux-3.png" alt="moving dotnet application to linux 3" class="img-responsive lazyload" />
  
 <p>This was also quite nice as I knew there was another application that needed some PDF functionality, and now I had a nice and reusable API to call.</p>
 
@@ -143,11 +143,11 @@ AddAuthentication(Action&lt;AuthenticationOptions&gt; configureOptions).
 
 <p>This didn’t make any sense. It’s the same code from Windows… but the more I looked at it, I realised that this was probably the culprit:</p>
  
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-4.png" alt="moving dotnet application to linux 4" class="img-responsive lazyload" /> 
+<img data-src="/pics/moving-to-linux-4.png" alt="moving dotnet application to linux 4" class="img-responsive lazyload" /> 
  
 <p>First off, the app isn’t using IIS, so the chances are, IIS authentication probably isn’t going to work. So after much googling, I found that while it is possible to get windows authentication working on Linux,  to set it up you need to <a href="https://docs.microsoft.com/en-us/aspnet/core/security/authentication/windowsauth">have access to a domain controller</a> – something that I expect no developer would have--or should have! This is clearly not a practical solution. My solution was to move Windows auth out of the Linux server and move it to a different application (a topic for another post). But, to get you started, I found out I could have the application use IIS auth for when running under Windows, and a different auth for when running under Linux:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-5.png" alt="moving dotnet application to linux 5" class="img-responsive lazyload" /> 
+<img data-src="/pics/moving-to-linux-5.png" alt="moving dotnet application to linux 5" class="img-responsive lazyload" /> 
  
 <p>This is kind of cool, but really it probably should be a config that is set at startup, not determined by the code at runtime depending on the OS that it’s running on.</p>
 
@@ -157,11 +157,11 @@ AddAuthentication(Action&lt;AuthenticationOptions&gt; configureOptions).
 <h3 id="system-fonts">System fonts</h3>
 <p>Inside my application I had a little bit of code that created a list of all of the system fonts installed on the server:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-6.png" alt="moving dotnet application to linux 6" class="img-responsive lazyload" /> 
+<img data-src="/pics/moving-to-linux-6.png" alt="moving dotnet application to linux 6" class="img-responsive lazyload" /> 
  
 <p>When this code ran, I got this error:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-7.png" alt="moving dotnet application to linux 7" class="img-responsive lazyload" /> 
+<img data-src="/pics/moving-to-linux-7.png" alt="moving dotnet application to linux 7" class="img-responsive lazyload" /> 
  
 <p>Not the most helpful error message I've ever seen, but needless to say, managing font files just doesn't work. I managed to find this <a href="https://github.com/dotnet/runtime/issues/27200">github issue</a> that had a few workarounds, but I never got around to trying them. I ended up moving the same code to the Pdf Api that I mentioned earlier. </p>
 
@@ -171,11 +171,11 @@ AddAuthentication(Action&lt;AuthenticationOptions&gt; configureOptions).
 
 <p>Notice anything weird going on here?</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-8.png" alt="moving dotnet application to linux 8" class="img-responsive lazyload" /> 
+<img data-src="/pics/moving-to-linux-8.png" alt="moving dotnet application to linux 8" class="img-responsive lazyload" /> 
  
 <p>Ever seen the ¤ character before? Neither had I, but apparently it's the currency sign used to denote an <a href="https://en.wikipedia.org/wiki/Currency_sign_(typography)">unspecified currency</a>. This means you need to set the culture inside your code instead of relying on the server’s culture:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-9.png" alt="moving dotnet application to linux 9" class="img-responsive lazyload" />  
+<img data-src="/pics/moving-to-linux-9.png" alt="moving dotnet application to linux 9" class="img-responsive lazyload" />  
 
 <p>Problem solved. That was a good one!</p>
 
@@ -198,7 +198,7 @@ RUN sed 's/DEFAULT@SECLEVEL=2/DEFAULT@SECLEVEL=1/' \
 <h3 id="network-share-paths">Network Share Paths</h3>
 <p>Writing to a Windows network share is suddenly much more difficult. My solution was to mount the network share on the host using samba (via smbclient), and then mapping this mounted share to a Docker volume, and then reading from that. It then finally works, after only adding two more levels of abstraction! But… can you change the permissions on the newly created file? Let’s try it:</p>
  
- <img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-10.png" alt="moving dotnet application to linux 10" class="img-responsive lazyload" /> 
+ <img data-src="/pics/moving-to-linux-10.png" alt="moving dotnet application to linux 10" class="img-responsive lazyload" /> 
  
 <p>Oh well, I guess not. This was annoying as it meant I couldn't change basic file permissions like making it readonly, or do something more advanced like change the owner of the file. </p>
 
@@ -227,12 +227,12 @@ RUN sed 's/DEFAULT@SECLEVEL=2/DEFAULT@SECLEVEL=1/' \
 
 <p>So after all of those woes, I managed to get my application fully up and running:</p>
 
- <img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-13.png" alt="moving dotnet application to linux 13" class="img-responsive lazyload" /> 
+ <img data-src="/pics/moving-to-linux-13.png" alt="moving dotnet application to linux 13" class="img-responsive lazyload" /> 
 
 
 <p>I added a new page to dump out some runtime information, and it now displays the following: </p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/moving-to-linux-12.png" alt="moving dotnet application to linux 12" class="img-responsive lazyload" /> 
+<img data-src="/pics/moving-to-linux-12.png" alt="moving dotnet application to linux 12" class="img-responsive lazyload" /> 
  
 
 <p>This is pretty cool! This opens up a world of possibilities:</p>

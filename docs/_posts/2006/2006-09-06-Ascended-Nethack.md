@@ -3,7 +3,7 @@ date: 2006-09-06
 category: technical
 readtime: true
 ---
-<img src="https://static.lachlanbarclay.net/pics/ascension2.png" class="img-responsive" alt="nethack end" /></a>Wohooo! I have finally managed to "Ascend" (finish) nethack! You can read all about it on my newsgroup post titled <a href="http://groups.google.com.au/group/rec.games.roguelike.nethack/browse_thread/thread/d4ea8fe0ef2b84a5/4a2901c840bc1708#4a2901c840bc1708">First Ascension</a>. It's taken me about 3 years of on-again off-again playing to finish it. I was playing a Barbarian - I can see that I'll now have to try another race - perhaps a Wizard?<br /><br />The screenshot on the right shows the final endgame level - click on it for the full-sized version.
+<img src="/pics/ascension2.png" class="img-responsive" alt="nethack end" /></a>Wohooo! I have finally managed to "Ascend" (finish) nethack! You can read all about it on my newsgroup post titled <a href="http://groups.google.com.au/group/rec.games.roguelike.nethack/browse_thread/thread/d4ea8fe0ef2b84a5/4a2901c840bc1708#4a2901c840bc1708">First Ascension</a>. It's taken me about 3 years of on-again off-again playing to finish it. I was playing a Barbarian - I can see that I'll now have to try another race - perhaps a Wizard?<br /><br />The screenshot on the right shows the final endgame level - click on it for the full-sized version.
 
 <p>This was my first time into the elemental (and astral) planes so it was an adventure!</p>
 

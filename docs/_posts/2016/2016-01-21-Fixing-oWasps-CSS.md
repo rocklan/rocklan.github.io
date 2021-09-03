@@ -5,7 +5,7 @@ readtime: true
 ---
 This week I heard about the <a href="https://www.owasp.org/index.php/.NET_Security_Cheat_Sheet">.NET Security Cheat Sheet</a> written by the owasp guys. So I opened it up on my mobile and saw this: <br /><br />
 
-<img src="https://static.lachlanbarclay.net/pics/owasp-mobile.jpg" class="img-responsive">
+<img src="/pics/owasp-mobile.jpg" class="img-responsive">
 
 <br style="clear: both" /><br />
 Eish. The text is tiny and you need to scroll around the screen to be able to read a sentence. Someone needs a mobile friendly CSS! So I tweeted them and got this response:<br /><br />
@@ -19,13 +19,13 @@ Fair enough. <br /><br />
 
 So I fixed it... how's this?<br /><br /><br />
 
-<img src="https://static.lachlanbarclay.net/pics/owasp-fixed.png" class="img-responsive">
+<img src="/pics/owasp-fixed.png" class="img-responsive">
 
 <br style="clear: both" /><br />
 
 The "main" culprit was the TABLE tag inside the HTML:<br /><br />
 
-<img src="https://static.lachlanbarclay.net/pics/owasp-html.png" class="img-responsive">
+<img src="/pics/owasp-html.png" class="img-responsive">
 
 <br style="clear: both" /><br />
 

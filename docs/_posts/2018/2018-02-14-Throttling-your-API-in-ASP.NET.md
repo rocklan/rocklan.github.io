@@ -2,17 +2,17 @@
 date: 2018-02-14
 category: technical
 readtime: true
-cover-img: https://static.lachlanbarclay.net/pics/throttling/throttling.gif
+cover-img: /pics/throttling/throttling.gif
 tags: c# dotnet throttling api
 ---
 
 <p>Can someone DOS attack your API and bring down your webservice? Could I hit your API at 100 requests a second and bring down your server? Or can you throttle your users like this?</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/throttling/throttling.png" alt="Homer throttling Bart" class="img-responsive lazyload" />
+<img data-src="/pics/throttling/throttling.png" alt="Homer throttling Bart" class="img-responsive lazyload" />
 
 <p>Sorry, I couldn't resist. How about like this?</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/throttling/throttling.gif" alt="throttling animated gif" class="img-responsive lazyload"  >
+<img data-src="/pics/throttling/throttling.gif" alt="throttling animated gif" class="img-responsive lazyload"  >
 <br />
 <p>If the answer is no, the good news is that it's quite easy to do in ASP.NET. You can use the fully featured <a href="https://github.com/stefanprodan/WebApiThrottle">WebApiThrottle</a>, or if you don't need something fancy you can build it yourself.</p>
 
@@ -77,7 +77,7 @@ public HttpResponseMessage HelloWorld()
     
 <p>Nice. Hitting our API in the browser should now show "Hello World":</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/throttling/1-helloworld.png" class="img-responsive lazyload" alt="hello world" />
+<img data-src="/pics/throttling/1-helloworld.png" class="img-responsive lazyload" alt="hello world" />
 
 <h2 id="show-me-the-limit">Show me the limit(ing)!</h2>
 
@@ -105,7 +105,7 @@ public HttpResponseMessage HelloWorld()
 
 <p>Hitting our API ten times should then return a lovely <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429">429 "Too Many Requests"</a> response:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/throttling/2-toomanyrequests.png" class="img-responsive lazyload" alt="too many requests" />
+<img data-src="/pics/throttling/2-toomanyrequests.png" class="img-responsive lazyload" alt="too many requests" />
 
 <h3>Don't use that code!</h3>
 

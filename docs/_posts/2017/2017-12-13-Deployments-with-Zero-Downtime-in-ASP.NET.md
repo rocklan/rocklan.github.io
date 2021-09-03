@@ -2,7 +2,7 @@
 date: 2017-12-13
 category: technical
 readtime: true
-cover-img: https://static.lachlanbarclay.net/pics/bluegreen/8-antiforgery.png
+cover-img: /pics/bluegreen/8-antiforgery.png
 tags: deployments iis 
 ---
 
@@ -11,7 +11,7 @@ Did you know that you can have zero downtime deployments with your ASP.NET appli
 
 You don't even need to be using AWS or Azure, or have a fancy load balancer or anything else clever and expensive! So how does this thing work?
 
-<img data-src="https://static.lachlanbarclay.net/pics/bluegreen/0-general-idea2.png" class="img-responsive lazyload" />
+<img data-src="/pics/bluegreen/0-general-idea2.png" class="img-responsive lazyload" />
 
    
 The basic idea is that you have two instances of your app running in production. At any point in time your users are using only one of these instances, and when you do a deploy you update the instance that isn't being used. Then you switch the users over to the new instance. See that blue line? That's a <a href="https://blogs.msdn.microsoft.com/friis/2016/08/25/setup-iis-with-url-rewrite-as-a-reverse-proxy-for-real-world-apps/">reverse proxy</a>.
@@ -46,27 +46,27 @@ Ok. First off, install <a href="https://www.iis.net/downloads/microsoft/applicat
 
 Great. Now, add two new sites within IIS and bind them to different ports:
 
-<img data-src="https://static.lachlanbarclay.net/pics/bluegreen/1-iis.png" class="img-responsive lazyload" />
+<img data-src="/pics/bluegreen/1-iis.png" class="img-responsive lazyload" />
 
 I suggest ports 8080 and 8081. If all has gone according to plan, you should be able to open them both up in your web browser like so:
 
-<img data-src="https://static.lachlanbarclay.net/pics/bluegreen/2-Sites.png" class="img-responsive lazyload" />
+<img data-src="/pics/bluegreen/2-Sites.png" class="img-responsive lazyload" />
 
 Beautiful! Now for the fun part. Go to your application within IIS and open the "URL Rewrite" section:
 
-<img data-src="https://static.lachlanbarclay.net/pics/bluegreen/3-UrlRewrite.png" class="img-responsive lazyload" />
+<img data-src="/pics/bluegreen/3-UrlRewrite.png" class="img-responsive lazyload" />
 
 
 Click "Add Rule(s)..." and select "Reverse Proxy". If you don't see Reverse Proxy, you need to go back and install ARR (and perhaps reboot).
 
 Now you can enter the address of one of your new sites, like so:
 
-<img data-src="https://static.lachlanbarclay.net/pics/bluegreen/4-ReverseProxy.png" class="img-responsive lazyload" />
+<img data-src="/pics/bluegreen/4-ReverseProxy.png" class="img-responsive lazyload" />
 
 
 Click save, and you should now be able to open your existing application within IIS and see that you're actually proxying all requests to one of your sites!
 
-<img data-src="https://static.lachlanbarclay.net/pics/bluegreen/5-Proxied.png" class="img-responsive lazyload" />
+<img data-src="/pics/bluegreen/5-Proxied.png" class="img-responsive lazyload" />
 
 
 You can now change your reverse proxy to point towards 8081, simulating a live switchover. Just edit the rule within the IIS GUI and change the port number. Or, you can modify the generated web.config file yourself, which I find much easier. You're looking for something like this:
@@ -265,7 +265,7 @@ So what's the gotcha? You might need to also double check your binding configura
 
 <h4>Anti Forgery (ahem, Tokens)</h4>
 
-<img data-src="https://static.lachlanbarclay.net/pics/bluegreen/8-antiforgery.png" class="img-responsive lazyload" />
+<img data-src="/pics/bluegreen/8-antiforgery.png" class="img-responsive lazyload" />
 
 If you're using <a href="https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/preventing-cross-site-request-forgery-csrf-attacks">AntiForgery Tokens to protect against CSRF attacks</a> you might come across another problem. 
 
@@ -273,11 +273,11 @@ When you change your reverse proxy to point towards your other application insta
 
 These two keys are confusingly hidden inside a section within IIS named "Machine Keys". However these keys are <b>application level scoped</b>, so they are nothing to do with your machine! So fire up IIS, and within the ASP.NET section find the machine keys icon:
 
-<img data-src="https://static.lachlanbarclay.net/pics/bluegreen/6-machinekey.png" class="img-responsive lazyload" />
+<img data-src="/pics/bluegreen/6-machinekey.png" class="img-responsive lazyload" />
 
 Disable the <b>automatically generate at runtime</b> and <b>Generate a unique key for each application</b>, and go ahead and click the "Generate Keys" link:
 
-<img data-src="https://static.lachlanbarclay.net/pics/bluegreen/7-machinekey2.png" class="img-responsive lazyload" />
+<img data-src="/pics/bluegreen/7-machinekey2.png" class="img-responsive lazyload" />
 
 This should generate the following for your application's web.config:
 

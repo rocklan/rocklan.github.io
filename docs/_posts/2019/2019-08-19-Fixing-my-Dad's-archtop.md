@@ -3,22 +3,22 @@ date: 2019-08-19
 category: music
 readtime: true
 tags: guitar jazz pickups
-cover-img: https://static.lachlanbarclay.net/pics/archtop/guitar1.png
+cover-img: /pics/archtop/guitar1.png
 ---
 <p>This is a photo of my Dad's 1981 <a href="http://www.noyceguitars.com" target="_blank">Noyce</a> archtop guitar:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/guitar1.png" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/guitar1.png" class="img-responsive lazyload" />
 
 <p>As you can see, it's a beautiful thing. Sounds amazing and super easy to play. It's all fantastic, until you go to plug the guitar in, and you see this:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/xlr-output.png" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/xlr-output.png" class="img-responsive lazyload" />
 
 <h3>What the heck??</h3>
 
 
 <p>When the guitar was originally made, an active EMG pickup was installed. Apparently at the time EMG were a pretty new company! I asked on reddit and apparently I needed to look underneath the pickup to see what it was. So after a bit of screwing this is what I found:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/pickup-back.jpg" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/pickup-back.jpg" class="img-responsive lazyload" />
 
 <p>I couldn't find anything about this pickup online, but I think "A" stands for Alnico. </p>
 <p>
@@ -26,15 +26,15 @@ Now because the pickup needed two 9v batteries, instead of adding a large cavity
 
 <p>Instead of the usual setup for an active pickup with one volume knob, which should look like this:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/wiring-diagram1.png" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/wiring-diagram1.png" class="img-responsive lazyload" />
 
 <p>They decided to get rid of the batteries, and replace the stereo output jack with an XLR output jack:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/wiring-diagram2.png" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/wiring-diagram2.png" class="img-responsive lazyload" />
 
 <p>And then run the output from the XLR, via a microphone lead, into a little box that contained the batteries, and converted it to a normal 1/4" output jack:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/wiring-diagram3.png" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/wiring-diagram3.png" class="img-responsive lazyload" />
 
 <p>So that's how everything was wired up.</p>
 
@@ -48,7 +48,7 @@ Now because the pickup needed two 9v batteries, instead of adding a large cavity
 
 <p>My first thought was perhaps it was just the volume knob. It had an 'interesting' soldering job:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/volume-knob-wiring.jpg" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/volume-knob-wiring.jpg" class="img-responsive lazyload" />
 
 <p>So I bought a replacement pot, soldered it in, but no luck. Still no worky.</p>
 
@@ -63,13 +63,13 @@ Now because the pickup needed two 9v batteries, instead of adding a large cavity
 
 <p>So to start with, I built a new power box that took a 1/4" stereo jack in and 1/4" jack out:</p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/newbox.png" class="img-responsive lazyload" />
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/powerbox2.jpg" class="img-responsive lazyload" />
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/newbox2.png" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/newbox.png" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/powerbox2.jpg" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/newbox2.png" class="img-responsive lazyload" />
 
 <p>And I ordered a new <a target="_blank"  href="https://luthiersupplies.com.au/les-paul-style-jack-plates">stereo output jack and plate</a> and put them inside the guitar, hooking it up to the new volume knob, and replacing the pickup wiring as well. The output jack looked much better: </p>
 
-<img data-src="https://static.lachlanbarclay.net/pics/archtop/new-output-jack.jpg" class="img-responsive lazyload" />
+<img data-src="/pics/archtop/new-output-jack.jpg" class="img-responsive lazyload" />
 
 <p>Then time for the final test:</p>
 
