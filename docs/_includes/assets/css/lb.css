@@ -86,7 +86,7 @@
 }
 
 #productname {
-  padding: 50px;
+  padding: 50px 0px 50px 0px;
   min-height: 350px;
   width: 100%;
   background: rgb(104,96,255);
@@ -99,7 +99,7 @@
   display: inline-block;
   text-align: center; 
   color: white;
-  font-size: 48pt;
+  font-size: 44pt;
 }
 
 .textcenter { text-align: center; }
