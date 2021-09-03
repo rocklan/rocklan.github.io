@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="mystyle.css?v=1">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+	  
+  </head>
+	<body>
+		<div id="header">
+		<h1 id="MainHeading">My GPS</h1>
+		
+			<button id="Start" type="button" class="buttonstyle">Start</button>
+			<button id="Download" type="button" class="buttonstyle">Download</button>
+			<button id="Clear" type="button" class="buttonstyle">Clear</button>
+			<button id="Bubble" type="button" class="buttonstyle">Hide 5km</button>
+		</div>
+		<div id="mapid"></div> <br />
+
+		<table id="details">
+			<thead>
+			<tr>
+				<th>time</th>
+				<th>lat</th>
+				<th>long</th>
+				<th>elevation</th>
+				<th>accuracy</th>
+				<th>dist</th>
+			</tr>
+			</thead>
+			<tbody id="tabledetails">
+			</tbody>
+		</table>
+	
+		 
+
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+		<script type="text/javascript" src="gps.js?v=3"></script>
+	</body>
+</html>

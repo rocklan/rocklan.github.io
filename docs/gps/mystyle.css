@@ -1,0 +1,38 @@
+html {
+	font-family: arial;
+}
+
+.buttonstyle
+{
+	background-color: #2266aa;
+	color: white;
+	border: none;
+	padding: 5px;
+	width: 100px;
+	border-radius: 3px;
+	margin-right: 10px;
+	font-size: 11pt;
+	letter-spacing: 1px;
+	margin-bottom: 1em;
+}
+
+.buttonstyle:active
+{
+	background-color: #4488cc;
+}
+
+#details
+{ 
+	width: 100%;
+}
+
+#mapid { width: 100%; height: 512px; }
+
+th {
+	text-align: left;
+}
+
+.inputstyle {
+	border-radius: 5px;
+}
+
