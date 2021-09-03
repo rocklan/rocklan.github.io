@@ -85,3 +85,16 @@
        url('../webfonts/lora-v17-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+#productname {
+  padding: 50px;
+  width: 100%;
+  text-align: center;
+  background: rgb(104,96,255);
+  background: linear-gradient(90deg, rgba(104,96,255,1) 0%, rgba(50,214,43,1) 100%);
+  color: white;
+  font-size: 48pt;
+}
+
+.textcenter { text-align: center; }
+
+#generatename { width: 100% }
