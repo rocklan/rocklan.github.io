@@ -7,7 +7,7 @@ readtime: true
 js: /assets/js/productnamegenerator.js
 ---
 
-<h2 id='productname'></h2>
+<h2 id='productname'><span id='productnametext'></span></h2>
 
 <button class="btn btn-primary" id="generatename">Generate Another Product Name</button>
 
@@ -20,7 +20,7 @@ var buzzword = ['Blockchain', 'AI', 'Data Miner', 'Quantum', 'Unicorn', 'Startup
 var thing = ['Wearable', 'Console', 'Plugin', 'Extender', 'Transformer']
 
 function generateName() {
-    document.getElementById('productname').innerText = 
+    document.getElementById('productnametext').innerText = 
         pickOne(opinion) + ' ' + pickOne(adjectives) + ' ' + pickOne(buzzword) + ' ' + pickOne(thing);
 }
 

@@ -4,7 +4,7 @@ var buzzword = ['Blockchain', 'AI', 'Data Miner', 'Quantum', 'Unicorn', 'Startup
 var thing = ['Wearable', 'Console', 'Plugin', 'Extender', 'Transformer']
 
 function generateName() {
-    document.getElementById('productname').innerText = 
+    document.getElementById('productnametext').innerText = 
         pickOne(opinion) + ' ' + pickOne(adjectives) + ' ' + pickOne(buzzword) + ' ' + pickOne(thing);
 }
 

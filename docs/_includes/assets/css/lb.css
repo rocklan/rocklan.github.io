@@ -87,10 +87,17 @@
 
 #productname {
   padding: 50px;
+  min-height: 350px;
   width: 100%;
-  text-align: center;
   background: rgb(104,96,255);
   background: linear-gradient(90deg, rgba(104,96,255,1) 0%, rgba(50,214,43,1) 100%);
+  text-align: center;
+}
+
+#productnametext { 
+  max-width: 400px;
+  display: inline-block;
+  text-align: center; 
   color: white;
   font-size: 48pt;
 }
