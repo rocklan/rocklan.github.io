@@ -4,51 +4,83 @@ category: trivia
 readtime: true
 published: true
 title: Trivia Night
-layout: page
+layout: embeddable
 cover-img: /images/doom-eviternity.png
 thumbnail-img: /images/doom-eviternity-thumb.png
-ext-css: /assets/css/trivia.css
+ext-css: 
+  - /assets/css/reveal.css
+  - /assets/css/black.css
+  - /assets/css/trivia.css
+ext-js: 
+  - /assets/js/present.js
+  - /assets/js/reveal.js
+  - /assets/js/markdown.js
 ---
 
-# Trivia Night
+<div class="reveal">
+  <div class='footer'>
+    <a href="trivia-night-questions">Questions</a>
+    <a href="trivia-night-answers">Answers</a>
+  </div>
 
-## Doom Round
-### Doom Questions
+	<div class="slides" id="slides">
+        <section data-markdown data-separator="---">
+                    <script type="text/template">
+## Lachlan B's
+# Awesome Trivia
+---
+## Question 1 
+How many weapons are available in doom 2?  <!-- .element: class="fragment" -->
+---
+## Question 2
+What does WAD stand for? <!-- .element: class="fragment" -->
+* Where's all the Data <!-- .element: class="fragment" -->
+* Works as Designed<!-- .element: class="fragment" -->
+* World AIDS Day<!-- .element: class="fragment" -->
+* Without A Doubt <!-- .element: class="fragment" -->
+* Wide-Area Development                      <!-- .element: class="fragment" -->
+---
+## Question 3
+This level looks like fun! What is the name of this level?  ![image-title-here](/images/barrells.png){:class="img-responsive"}
+---
+## Question 4
+How many unique monsters are there in Doom2? <!-- .element: class="fragment" -->
+---
+## Question 5
+Cheating is awesome when you're a kid. Name one combination of keys you can type to cheat.<!-- .element: class="fragment" -->
+---
+## Question 6
+My favourite music is 80's heavy metal. Name one band that inspired the music for Doom.<!-- .element: class="fragment" -->
+---
+## Question 7
+What is the speedrun record for all 4 episodes of Doom (36 levels)? <!-- .element: class="fragment" -->
+- 7:49<!-- .element: class="fragment" -->
+- 19:43<!-- .element: class="fragment" -->
+- 34:11<!-- .element: class="fragment" -->
+- 57:25<!-- .element: class="fragment" -->
 
-1. How many weapons are available in doom 2? 
+---
+## Question 8
+How many shotgun shells can you pick up after picking up the backpack? <!-- .element: class="fragment" -->
+* 50 <!-- .element: class="fragment" -->
+* 80 <!-- .element: class="fragment" -->
+* 100 <!-- .element: class="fragment" -->
+* 200<!-- .element: class="fragment" -->
+---
+## Question 9
+Separate into teams, average out answers. <!-- .element: class="fragment" -->
 
-2. What does WAD stand for? 
-    * Where's all the Data 
-    * Works as Designed
-    * World AIDS Day
-    * Without A Doubt 
-    * Wide-Area Development
-3. This level looks like fun! What is the name of this level?
-![image-title-here](/images/barrells.png){:class="img-responsive"}
+How many monsters are there, in total, across all of doom 2, in ultra violence? <!-- .element: class="fragment" -->
+---
+## Question 10
+Mark the start point on this map  <!-- .element: class="fragment" -->
 
-4. Group into teams and average out answers. How many unique monsters are there in Doom2? 
+![image-title-here](/images/e1m1.png)<!-- .element: class="fragment" -->
 
-5. Cheating is awesome when you're a kid. Name one combination of keys you can type to cheat.
-
-6. My favourite music is 80's heavy metal. Name one band that inspired the music for Doom.
-
-7. What is the speedrun record for all 4 episodes of Doom (36 levels)? 
-    * 7:49
-    * 19:43
-    * 34:11
-    * 57:25
-
-8. How many shotgun shells can you pick up after picking up the backpack? 
-    * 50 
-    * 80 
-    * 100 
-    * 200
-
-9. Work out teams, average out answers. How many monsters are there, in total, across all of doom 2, in ultra violence?
-
-10. Mark the start point on this map 
-
-![image-title-here](/images/e1m1.png){:class="img-responsive"}
+                    </script>
+        </section>
+			</div>
+		</div>
 
 
 ### Doom Answers

@@ -2,6 +2,20 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="/assets/css/bundle.css?v=1630647458"></head>
-<body>{{ content }}</body>
+<head>
+    {% if page.ext-css %}
+    {% for css in page.ext-css %}
+      {% include ext-css.html css=css %}
+    {% endfor %}
+    {% endif %}
+</head>
+<body>
+    {{ content }}
+
+    {% if page.ext-js %}
+    {% for js in page.ext-js %}
+      <script src="{{ js | relative_url }}"></script>
+    {% endfor %}
+    {% endif %}
+</body>
 </html>

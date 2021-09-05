@@ -1,2 +1,28 @@
-#pagecontent  h3 { margin-bottom: 1em; }
-#pagecontent  li { margin-bottom: 0.5em; margin-top: 0.5em }
+
+ul { list-style-type: upper-alpha !important; }
+li { padding-left: 30px; }
+
+.reveal .footer {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    font-size: 0.5em;
+    z-index: 1;
+  }
+
+  .reveal .footer a {
+    
+    padding-right: 5px;
+    padding-left: 5px;
+  }  
+
+h2 { color:  #42affa !important; font-size: 32pt !important }
+
+  a { text-decoration: underline !important; }
+
+.smallerimage {
+    max-width: 70% !important;
+    max-height: 70% !important;
+}
+
+ .answer { color: #ff2c2d; }
