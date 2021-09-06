@@ -8,3 +8,7 @@ layout: trivia
 
 # Lach's Trivia
 
+* [Doom](/trivia/doom)
+* [Languages](/trivia/tvshowlanguages)
+* [90's Movies](/trivia/90smovies)
+{: .nobullets}    
