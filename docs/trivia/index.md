@@ -12,3 +12,5 @@ layout: trivia
 * [Languages](/trivia/tvshowlanguages)
 * [90's Movies](/trivia/90smovies)
 {: .nobullets}    
+
+[Scoring](/trivia/scoring)
