@@ -30,3 +30,5 @@ a { text-decoration: underline !important; }
  .answer { color: #ff2c2d; }
 
  .smaller { font-size: 18pt; }
+
+ .onecolumn { width: 45%; float: left;}

@@ -13,7 +13,7 @@ layout: trivia
 ## Question 1
 How much money did Titanic gross?<!-- .element: class="fragment" data-fragment-index="1" -->
 
-(Separate into teams, average out score, winners get a point each) <!-- .element: class="fragment smaller" data-fragment-index="1" -->
+(Separate into teams, average out answers, winners get a point each) <!-- .element: class="fragment smaller" data-fragment-index="1" -->
 
 @@@
 ## Question 2
@@ -25,18 +25,17 @@ Name three science fiction movies that came out in the 90's<!-- .element: class=
 
 @@@
 ## Question 4
-Out of these, which first had the phrase:<!-- .element: class="fragment" -->
-#### "That's what she said"?<!-- .element: class="fragment" -->
+Out of these, which first had the phrase:<!-- .element: class="fragment" data-fragment-index="1" -->
+#### "That's what she said"?<!-- .element: class="fragment" data-fragment-index="2" -->
 
-<div style='float: left; width: 50%'>
+* Bill & Ted's Excellent Adventure <!-- .element: class="fragment" data-fragment-index="3" -->
+* The Office <!-- .element: class="fragment" data-fragment-index="4" --> 
+* The Big Lebowski <!-- .element: class="fragment" data-fragment-index="5" -->
+* Wayne's World <!-- .element: class="fragment" data-fragment-index="6" -->
+{: .onecolumn }
 
-* Bill & Ted's Excellent Adventure <!-- .element: class="fragment" -->
-* The Office <!-- .element: class="fragment" --> 
-* The Big Lebowski <!-- .element: class="fragment" -->
-* Wayne's World <!-- .element: class="fragment" -->
-
-</div>
-<img src="/trivia/thatswhatshesaid.png" style='float: left; width: 45%' /><!-- .element: class="fragment" -->
+<img src="/trivia/thatswhatshesaid.png" /><!-- .element: class="fragment" data-fragment-index="6" -->
+{: .onecolumn }
 
 @@@
 ## Question 5
@@ -50,15 +49,14 @@ What does Annakin Skywalker not like?<!-- .element: class="fragment" -->
 ## Question 6
 What is this guy saying?<!-- .element: class="fragment" data-fragment-index="1" -->
 
-<div style='float: left; width: 50%'>
-
 * You're so money! <!-- .element: class="fragment"  -->
 * Give me the money! <!-- .element: class="fragment" --> 
 * Show me the money! <!-- .element: class="fragment" -->
 * Xenu will rule the world! <!-- .element: class="fragment" -->
+{: .onecolumn }
 
-</div>
-<img src="/trivia/jerrymaguire.jpg" style='float: left; width: 45%' /><!-- .element: class="fragment" data-fragment-index="1" -->
+<img src="/trivia/jerrymaguire.jpg" /><!-- .element: class="fragment" data-fragment-index="1" -->
+{: .onecolumn }
 
 @@@
 ## Question 7
@@ -143,15 +141,14 @@ What does Annakin Skywalker not like?
 ## Question 6
 What is this guy saying?
 
-<div style='float: left; width: 50%'>
-
 * You're so money! 
 * Give me the money! 
 * Show me the money! <!-- .element: class="fragment highlight-red" -->
 * Xenu will rule the world! 
+{: .onecolumn }
 
-</div>
-<img src="/trivia/jerrymaguire.jpg" style='float: left; width: 45%' />
+<img src="/trivia/jerrymaguire.jpg" />
+{: .onecolumn }
 
 @@@
 ## Question 7
