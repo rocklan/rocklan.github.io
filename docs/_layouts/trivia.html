@@ -1,0 +1,26 @@
+---
+ext-css: 
+  - /assets/css/reveal.css
+  - /assets/css/black.css
+  - /assets/css/trivia.css
+ext-js: 
+  - /assets/js/present.js
+  - /assets/js/reveal.js
+  - /assets/js/markdown.js
+layout: embeddable
+---
+<div class="reveal">
+  <div class='footer'>
+    <a href="/trivia">Index</a>
+    <a href="/trivia/doom">Doom</a>
+    <a href="/trivia/tvshowlanguages">Languages</a>
+    <a href="/trivia/90smovies">90's Movies</a>
+  </div>
+  <div class="slides" id="slides">
+    <section data-markdown data-separator="@@@">
+      <script type="text/template">
+        {{ content }}
+      </script>
+    </section>
+  </div>
+</div>

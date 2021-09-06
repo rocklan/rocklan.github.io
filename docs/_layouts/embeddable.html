@@ -8,7 +8,13 @@
       {% include ext-css.html css=css %}
     {% endfor %}
     {% endif %}
-</head>
+
+    {% if layout.ext-css %}
+    {% for css in layout.ext-css %}
+      {% include ext-css.html css=css %}
+    {% endfor %}
+    {% endif %}
+  </head>
 <body>
     {{ content }}
 
@@ -17,5 +23,11 @@
       <script src="{{ js | relative_url }}"></script>
     {% endfor %}
     {% endif %}
-</body>
+
+    {% if layout.ext-js %}
+    {% for js in layout.ext-js %}
+      <script src="{{ js | relative_url }}"></script>
+    {% endfor %}
+    {% endif %}
+  </body>
 </html>
