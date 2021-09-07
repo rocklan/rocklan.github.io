@@ -38,7 +38,7 @@ Name the language sung in the song
 
 # Answers 
 
-{% assign languages = "Japanese, French, Russian, Chinese, Spanish, Swedish, Serbian, Korean, Hebrew, Greek" | split: ", " %}
+{% assign languages = "Bah!, Japanese, French, Russian, Chinese, Spanish, Swedish, Serbian, Korean, Hebrew, Greek" | split: ", " %}
 
 @@@
 

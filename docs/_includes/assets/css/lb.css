@@ -106,3 +106,9 @@
 
 #generatename { width: 100% }
 
+#submitform {
+  font-family: "Open Sans";
+}
+.text-input-label { 
+  font-weight: bold;
+}
