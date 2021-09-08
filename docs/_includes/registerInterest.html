@@ -1,0 +1,34 @@
+{% if page.workshop-id %}
+
+<hr />
+
+## Register your interest
+
+<div id="submitform">
+    <p>If you're interested in attending this workshop please let me know, and I can get back to you with some possible dates.</p>
+    <div class="row">
+        <div class="col-sm-9">
+            <form id="submitForm">
+                <div class="form-group">
+                    <label for="name" class="text-input-label">Your name:</label> <br>
+                    <input type="text" class="text-input-control" id="name" maxlength="50" placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-input-label">Email:</label> <br>
+                    <input type="email" class="text-input-control" id="email" maxlength="100" placeholder="jane.doe@example.com">
+                </div>
+                <div id="validationBox" class="redtext" style='display: none'>
+                    Please fix the highlighted fields 
+                </div>
+                <input type="hidden" id="workshopid" value="{{ page.workshop-id }}" />
+                <button type="button" class="btn btn-success" id="submitbutton">Submit</button>
+            </form>
+            <div id="successMessage" style='display: none' class="alert alert-success">
+                <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;
+                Thanks for submitting your details, I'll get back to you shortly.
+            </div> 
+        </div>
+    </div>
+</div>
+
+{% endif %}

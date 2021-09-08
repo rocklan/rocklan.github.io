@@ -3,6 +3,7 @@ layout: workshop
 title: Optimising your code with Visual Studio's Profiler
 subtitle: Dotnet workshops
 cover-img: /images/workshop.webp
+workshop-id: 1
 ---
 
 ## Summary
@@ -24,29 +25,6 @@ When code is running slow, most people start guessing at what the problem is, ba
 
 By the end of this workshop you'll be able to profile your code and work out where the bottlenecks are and know how to fix them.
 
-<hr />
+{% include registerInterest.html %}
 
-## Register your interest
 
-<div id="submitform">
-    <p>If you're interested in attending this workshop please let me know, and I can get back to you with some possible dates.</p>
-    <div class="row">
-        <div class="col-sm-9">
-            <form>
-                <div class="form-group">
-                    <label for="name" class="text-input-label">Your name:</label> <br>
-                    <input type="text" class="text-input-control" id="name" maxlength="50" placeholder="Jane Doe">
-                </div>
-                <div class="form-group">
-                    <label for="email" class="text-input-label">Email:</label> <br>
-                    <input type="email" class="text-input-control" id="email" maxlength="100" placeholder="jane.doe@example.com">
-                </div>
-                <div id="validationBox" class="redtext" style='display: none'>
-                    Please fix the highlighted fields 
-                </div>
-                <input type="hidden" id="workshopid" value="1" />
-                <button type="button" class="btn btn-success" id="submitbutton">Submit</button>
-            </form>
-        </div>
-    </div>
-</div>

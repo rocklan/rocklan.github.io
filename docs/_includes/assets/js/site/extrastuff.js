@@ -46,7 +46,6 @@ function handleWorkshopSubmit() {
 function onRegister() {
   var nameTextBox = document.getElementById('name');
   var emailTextBox = document.getElementById('email');
-  var idInput = document.getElementById('workshopid');
   var validationBox = document.getElementById('validationBox');
 
   nameTextBox.classList.remove('redborder');
@@ -70,6 +69,7 @@ function onRegister() {
 
   if (formOk === false) {
     validationBox.style.display = 'block';
+    validationBox.innerText = 'Please fix the highlighted fields';
   }
   else {
     validationBox.style.display = 'none';
@@ -85,29 +85,49 @@ function doRegisterSubmission() {
   }
 
   var submitbutton = document.getElementById('submitbutton');
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var workshopId = document.getElementById('workshopid').value;
+  var successMessage = document.getElementById('successMessage');
+  
+  successMessage.style.display = 'none';
   submitbutton.disabled = true;
   currentlySubmitting = true;
 
-  setTimeout(function() {
+  if (workshopId === '1') {
+    workshopId = 1;
+  } else {
+    workshopId = 2;
+  }
 
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var workshopId = document.getElementById('workshopid').value;
+  var dataToSubmit = JSON.stringify({ name, email, workshopId });
+  var url = 'http://localhost:7071/api/register';
 
-    if (workshopId === '1') {
-      workshopId = 1;
-    } else {
-      workshopId = 2;
+  fetch(url, {
+    method: 'post',
+    headers: { "Content-type": "application/json"},
+    body: dataToSubmit
+  })
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        validationBox.style.display = 'block';
+        validationBox.innerText = 'An error occured while submitting the form: ' + err;
+        return;
+      }
+      document.getElementById('submitForm').style.display = 'none';
+      successMessage.style.display = 'block';
     }
-
-    var dataToSubmit = { name, email, workshopId };
-
-    // Need to call API with name, email + workshopId data
-    console.log(dataToSubmit);
-
+  )
+  .catch(function(err) {
+    validationBox.style.display = 'block';
+    validationBox.innerText = 'An error occured while submitting the form: ' + err;
+  })
+  .finally(function() {
     submitbutton.disabled = false;
     currentlySubmitting = false;
-  }, 1000);
+  });
+
 }
 
 function validateEmail(email) {
