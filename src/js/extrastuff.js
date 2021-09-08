@@ -69,11 +69,11 @@ function onRegister() {
   }
 
   if (formOk === false) {
-    validationBox.style.display = 'block';
+    validationBox.classList.remove("hideit");
     validationBox.innerText = 'Please fix the highlighted fields';
   }
   else {
-    validationBox.style.display = 'none';
+    validationBox.classList.add("hideit");
     doRegisterSubmission();
   }
 }
@@ -91,7 +91,8 @@ function doRegisterSubmission() {
   var workshopId = document.getElementById('workshopid').value;
   var successMessage = document.getElementById('successMessage');
   
-  successMessage.style.display = 'none';
+  successMessage.classList.add("hideit");
+  
   submitbutton.disabled = true;
   currentlySubmitting = true;
 
@@ -112,16 +113,17 @@ function doRegisterSubmission() {
   .then(
     function(response) {
       if (response.status !== 200) {
-        validationBox.style.display = 'block';
+        validationBox.classList.remove("hideit");
         validationBox.innerText = 'An error occured while submitting the form: ' + err;
         return;
       }
-      document.getElementById('submitForm').style.display = 'none';
-      successMessage.style.display = 'block';
+      
+      document.getElementById('submitForm').classList.add("hideit");
+      successMessage.classList.remove("hideit");
     }
   )
   .catch(function(err) {
-    validationBox.style.display = 'block';
+    validationBox.classList.remove("hideit");
     validationBox.innerText = 'An error occured while submitting the form: ' + err;
   })
   .finally(function() {

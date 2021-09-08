@@ -17,13 +17,13 @@
                     <label for="email" class="text-input-label">Email:</label> <br>
                     <input type="email" class="text-input-control" id="email" maxlength="100" placeholder="jane.doe@example.com">
                 </div>
-                <div id="validationBox" class="redtext" style='display: none'>
+                <div id="validationBox" class="redtext hideit">
                     Please fix the highlighted fields 
                 </div>
                 <input type="hidden" id="workshopid" value="{{ page.workshop-id }}" />
                 <button type="button" class="btn btn-success" id="submitbutton">Submit</button>
             </form>
-            <div id="successMessage" style='display: none' class="alert alert-success">
+            <div id="successMessage" class="alert alert-success hideit">
                 <i class="fas fa-thumbs-up" aria-hidden="true"></i>&nbsp;
                 Thanks for submitting your details, I'll get back to you shortly.
             </div> 
