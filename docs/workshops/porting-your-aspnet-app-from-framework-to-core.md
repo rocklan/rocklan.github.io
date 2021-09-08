@@ -45,7 +45,10 @@ By the end of this workshop you'll be able to profile your code and work out whe
                     <label for="email" class="text-input-label">Email:</label> <br>
                     <input type="email" class="text-input-control" id="email" maxlength="100" placeholder="jane.doe@example.com">
                 </div>
-                <input type="hidden" id="workshopname" value="Porting your ASP.NET app from framework to core" />
+                <div id="validationBox" class="redtext" style='display: none'>
+                    Please fix the highlighted fields 
+                </div>
+                <input type="hidden" id="workshopid" value="2" />
                 <button type="button" class="btn btn-success" id="submitbutton">Submit</button>
             </form>
         </div>

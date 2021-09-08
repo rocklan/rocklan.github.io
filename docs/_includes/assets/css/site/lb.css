@@ -120,3 +120,7 @@
 }
 
 #submitbutton { width: 100%; }
+#validationBox { margin-bottom: 1em; }
+.redborder { border: 3px solid red}
+
+.redtext { color: red; }
