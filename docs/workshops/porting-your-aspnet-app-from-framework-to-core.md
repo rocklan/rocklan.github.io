@@ -5,6 +5,8 @@ subtitle: Dotnet workshops
 cover-img: /images/workshop.webp
 ---
 
+## Summary
+
 After moving a bunch of my own applications to dotnet core, I realised that there was an easy road to take, and a hard road to take. Moving your framework application to dotnet core doesn’t have to be a dangerous experiment. By slowly moving your application across, one class at a time, you can make life easy for yourself and your users.
 
 <div class='embed-container'><iframe src='https://www.youtube.com/embed/ectRj0SBJsw' frameborder='0' allowfullscreen></iframe></div>
