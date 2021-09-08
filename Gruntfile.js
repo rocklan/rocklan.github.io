@@ -9,12 +9,12 @@ module.exports = function (grunt) {
 				options: { reload: true }
 			},
 			scripts: {
-			  	files: ['docs/_includes/assets/js/*.js'],
+			  	files: ['src/js/*.js'],
 			  	tasks: ['uglify'],
 			  	options: { spawn: false },
 			},
 			css: {
-				files: ['docs/_includes/assets/css/*.css'],
+				files: ['src/css/*.css'],
 				tasks: ['cssmin'],
 				options: { spawn: false },
 			}
@@ -25,8 +25,8 @@ module.exports = function (grunt) {
                     banner: '' 
                 }, 
                 files: { 
-                    'docs/assets/css/styles.min.css': [ 
-                        'docs/_includes/assets/css/*.css'] 
+                    'docs/_includes/assets/css/site/styles.min.css': [ 
+                        'src/css/*.css'] 
                 } 
             } 
         }, 
@@ -36,9 +36,9 @@ module.exports = function (grunt) {
             }, 
             site: { 
                 src: [ 
-                	'docs/_includes/assets/js/*.js'
+                	'src/js/*.js'
                 ], 
-                dest: 'docs/assets/js/site.min.js' 
+                dest: 'docs/_includes/assets/js/site/extrastuff.min.js' 
             } 
         } 
     }); 

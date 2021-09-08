@@ -3,5 +3,6 @@
 
 {% include /assets/css/site/fontawesome.all.min.css %}
 {% include /assets/css/site/bootstrap.min.css %}
+{% include /assets/css/site/pygment_highlights.css %}
 {% include /assets/css/site/beautifuljekyll.css %}
-{% include /assets/css/site/lb.css %}
+{% include /assets/css/site/styles.min.css %}
