@@ -1,7 +1,7 @@
 ---
 ---
 
-{% include /assets/css/fontawesome.all.min.css %}
-{% include /assets/css/bootstrap.min.css %}
-{% include /assets/css/beautifuljekyll.css %}
-{% include /assets/css/lb.css %}
+{% include /assets/css/site/fontawesome.all.min.css %}
+{% include /assets/css/site/bootstrap.min.css %}
+{% include /assets/css/site/beautifuljekyll.css %}
+{% include /assets/css/site/lb.css %}

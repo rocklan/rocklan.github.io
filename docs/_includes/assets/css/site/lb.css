@@ -112,3 +112,11 @@
 .text-input-label { 
   font-weight: bold;
 }
+
+#submitform input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1em;
+}
+
+#submitbutton { width: 100%; }

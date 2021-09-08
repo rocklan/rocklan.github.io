@@ -37,13 +37,11 @@ By the end of this workshop you'll be able to profile your code and work out whe
                     <label for="name" class="text-input-label">Your name:</label> <br>
                     <input type="text" class="text-input-control" id="name" maxlength="50" placeholder="Jane Doe">
                 </div>
-                <br />
                 <div class="form-group">
                     <label for="email" class="text-input-label">Email:</label> <br>
                     <input type="email" class="text-input-control" id="email" maxlength="100" placeholder="jane.doe@example.com">
                 </div>
-                <br />
-                
+                <input type="hidden" id="workshopname" value="Optimising your code with visual studio's profiler" />
                 <button type="button" class="btn btn-success" id="submitbutton">Submit</button>
             </form>
         </div>
