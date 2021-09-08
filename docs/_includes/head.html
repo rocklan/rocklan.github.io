@@ -134,7 +134,7 @@
     {% include matomo.html %}
 
     {% assign cacheBust = site.time | date:'?v=%s' %}
-    <link rel="stylesheet" href="{{ "/assets/css/bundle.css" | relative_url | append: cacheBust }}">
+    <link rel="stylesheet" href="{{ "/assets/css/bundle-site.css" | relative_url | append: cacheBust }}">
 
     {% if page.head-extra %}
       {% for file in page.head-extra %}

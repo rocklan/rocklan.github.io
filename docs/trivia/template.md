@@ -100,6 +100,7 @@ Multiple choice question have an image?
 * Rocklan <!-- .element: class="fragment highlight-red" data-fragment-index="1" --> 
 * Splzk 
 * Indigo9 
+
 {: .onecolumn }
 
 <img src="/trivia/rocklan.png" />

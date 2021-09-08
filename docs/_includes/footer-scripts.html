@@ -4,6 +4,6 @@
   {% endfor %}
 {% endif %}
 {% assign cacheBust = site.time | date:'?v=%s' %}
-<script src="{{ "/assets/js/bundle.js" | relative_url | append: cacheBust }}"></script>
+<script src="{{ "/assets/js/bundle-site.js" | relative_url | append: cacheBust }}"></script>
 
 
