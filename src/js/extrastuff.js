@@ -102,7 +102,7 @@ function doRegisterSubmission() {
   }
 
   var dataToSubmit = JSON.stringify({ name, email, workshopId });
-  var url = 'http://localhost:7071/api/register';
+  var url = 'https://rocklan.azurewebsites.net/api/register';
 
   fetch(url, {
     method: 'post',
