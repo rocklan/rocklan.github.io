@@ -28,8 +28,8 @@ navbar-links:
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
-  Workshops: "/workshops"
-  Tags: "/tags"
+  Workshops: "/workshops/"
+  Tags: "/tags/"
 
 avatar: "/images/headshot.jpg"
 
