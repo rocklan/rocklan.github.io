@@ -29,7 +29,7 @@ navbar-links:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
   Workshops: "/workshops/"
-  Tags: "/tags/"
+  Tags: "/tags"
 
 avatar: "/images/headshot.jpg"
 
