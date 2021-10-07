@@ -24,6 +24,7 @@ The following is a list of WADS that we have played so that we can keep track of
 * [Toke's Coop Build](http://www.doom2.net/toke/) - Old school WAD with some great ideas. Super creative.
 * [Lost Civilisation](https://www.doomworld.com/forum/topic/105215-lost-civilization-22-map-fun-and-nonlinear-megawad-now-with-download-link/) - Utterly fantastic WAD
 * [Ancient Aliens](https://doomwiki.org/wiki/Ancient_Aliens) - Amazing WAD. Awesome new monsters, storyline and quirky. So much fun.
+* Resurge 
 
 #### Other WADS that were good fun 
 

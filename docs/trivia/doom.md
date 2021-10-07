@@ -66,7 +66,7 @@ Mark the start point on this map  <!-- .element: class="fragment" -->
 
 How many weapons are available in doom 2?  
 
-8 - chainsaw, pistol, shotgun, super shotgun, chaingun, rocket launcher, plasma gun, BFG900 (not including fists, 8 if you included fists) <!-- .element: class="fragment answer" -->
+8 - chainsaw, pistol, shotgun, super shotgun, chaingun, rocket launcher, plasma gun, BFG900 (not including fists, 9 if you included fists) <!-- .element: class="fragment answer" -->
 @@@
 ## Question 2
 What does WAD stand for? 

@@ -6,7 +6,7 @@ tags: seq c# dotnet logging
 cover-img: /pics/SeqLogging1.png
 ---
 
-<p>I am unabashed in how awesome I think <a href="https://getseq.net/">Seq</a> is. For troubleshooting stuff in production, this thing is a goldmine. Let's say I have some code:</p>
+<p>I think <a href="https://getseq.net/">Seq</a> is awesome. For troubleshooting stuff in production, this thing is a goldmine. Let's say I have some code:</p>
 
 ```
 public int Divide(int x, int y)

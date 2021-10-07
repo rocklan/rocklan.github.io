@@ -1,0 +1,76 @@
+---
+layout: base
+---
+
+{% include header.html type="page" %}
+
+<div class="container-fluid" role="main">
+  <div class="row">
+    <div class="col-xl-5 offset-xl-2 col-lg-7 offset-lg-1" id="pagecontent">
+      {% if page.before-content %}
+        <div class="before-content">
+          {% for file in page.before-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {{ content }}
+
+      {% if page.after-content %}
+        <div class="after-content">
+          {% for file in page.after-content %}
+            {% include {{ file }} %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% include comments.html %}
+    </div>
+
+    <div class="col-xl-3 offset-xl-1 col-lg-3 postsbyyear" >
+      
+      <h3>Popular Posts</h3>
+      <ul>
+      {%- for post in site.tags["popular"] -%}
+      <li>
+          <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+          <time datetime="{{- post.date | date_to_xmlschema -}}">({{- post.date | date: "%Y" -}})</time>
+        </li>
+      {%- endfor -%}
+      </ul>
+
+      <h3>Workshops</h3>
+      <ul>
+        <li><a href="/workshops/optimising-your-code-with-visual-studios-profiler">Optimising your code with Visual Studio's Profiler</a></li>
+        <li><a href="/workshops/porting-your-aspnet-app-from-framework-to-core">Porting your ASP.NET app from framework to core</a></li>
+      </ul>
+
+      <h3>All Posts By Year</h3>
+      {% for post in site.posts  %}
+      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+      {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+  
+      {% if forloop.first %}
+      <h4 id="{{ this_year }}-ref">{{this_year}}</h4>
+      <ul>
+      {% endif %}
+  
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  
+      {% if forloop.last %}
+      </ul>
+      {% else %}
+          {% if this_year != next_year %}
+          </ul>
+          <h4 id="{{ next_year }}-ref">{{next_year}}</h4>
+          <ul>
+          {% endif %}
+      {% endif %}
+      {% endfor %}
+
+
+
+    </div>
+  </div>
+</div>
