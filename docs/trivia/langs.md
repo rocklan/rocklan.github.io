@@ -7,116 +7,103 @@ layout: trivia
 ---
 
 ## Lach's Trivia
-# Category Name goes here
+# Language Is Awesome!
 
 @@@
 
 ## Question 1
 
-1. 여보세요! 그것은 당신을 만나서 반가워요
-2. Привет! Рад встрече
-3. 你好！ 很高興認識你
-4. שלום! זה נחמד לפגוש אותך
-5. नमस्कार! आपसे मिलकर अच्छा लगा
-6. こんにちは！ お会いできて光栄です
-7. xin chào! Thật vui được gặp bạn
-8. أهلا! من اللطيف مقابلتك
-9. Բարեւ Ձեզ! Հաճելի է հանդիպել ձեզ
-10. မင်္ဂလာပါတွေ့ရတာဝမ်းသာပါတယ်
+* 여보세요! 그것은 당신을 만나서 반가워요
+* Привет! Рад встрече
+* 你好！ 很高興認識你
+* שלום! זה נחמד לפגוש אותך
+* नमस्कार! आपसे मिलकर अच्छा लगा
+* こんにちは！ お会いできて光栄です
+* xin chào! Thật vui được gặp bạn
+* أهلا! من اللطيف مقابلتك
+* Բարեւ Ձեզ! Հաճելի է հանդիպել ձեզ
+* မင်္ဂလာပါတွေ့ရတာဝမ်းသာပါတယ်
 
-burmese, armenian, arabic, vietnamese, japanese, hindi, hebrew, chinese, russian, korean
+<div class="answer">burmese, armenian, arabic, vietnamese, japanese, hindi, hebrew, chinese, russian, korean</div>
 
 @@@
 
-Question 2
+## Question 2
 
 Listen and name the language
 
 @@@
 
-Question 3
+## Question 3
 
 Listen and name the language
 
 @@@
 
-Question 4
+## Question 4
 
 Listen and name the language
 
 @@@
 
-Question 5
+## Question 5
 
 Listen and name the language
 
 @@@
 
-Question 6
+## Question 6
 
 Listen and name the language
 
 @@@
 
-Question 7
+## Question 7
 
 Listen and name the language
 
 @@@
 
-Question 8
+## Question 8
 
 Listen and name the language
 
 @@@
 
-Question 9
+## Question 9
 
 Listen and name the language
 
 @@@
 
-Question 10
+## Question 10
 
 Listen and name the language
 
 @@@
 
-Question 11
+## Question 11
 
 Listen and name the language
 
-<div style='display: none'>
-21. Gled tae meet ye
-22. Salut! Ravi de vous rencontrer
-23. Hallo! Sehr nett dich kennzulernen
-24. Dia dhuit! Is deas bualadh leat
-25. Ciao! È un piacere conoscerti
-26. Hallo! Het is leuk u te ontmoeten
-27. ¡Hola! Encantado de conocerte
-28. Salve! Suus 'nice est in occursum tibi
-29. Hej! Det är trevligt att träffa dig
-30. Halo! Senang bertemu dengan mu
-</div>
-
-
 @@@
 
-Question 12
+## Question 12
 
+* ስለተዋወቅን ደስ ብሎኛል
+* Հաճելի է
+* ᎦᎵᎡᎵ ᏥᏕᎾᎸ
+* ང་ཁྱོད་དང་མཇལ་དེ་སེམས་དགའ་ཨི་།
+* તમને મળીને આનંદ થયો
+* ꦏꦸꦭꦱꦼꦤꦼꦁꦏꦼꦥꦁꦒꦶꦃꦏꦭꦶꦪꦤ꧀ꦥꦤ꧀ꦗꦺꦤꦼꦁꦔꦤ꧀
+* ބައްދަލުވީތީ ވަރަށް އުފާވެއްޖެ
+* Ɛyɛ me anigyeɛ sɛ mehyiaa woɔ
+* ยินดีที่ได้รู้จัก
+* మిమ్మల్ని కలవడం చాలా సంతోషంగా ఉంది
+
+<div class="answer">
 Group into pairs. What languages are these? Internet searching is allowed!
-
-11. ስለተዋወቅን ደስ ብሎኛል
-12. Հաճելի է
-13. ᎦᎵᎡᎵ ᏥᏕᎾᎸ
-14. ང་ཁྱོད་དང་མཇལ་དེ་སེམས་དགའ་ཨི་།
-15. તમને મળીને આનંદ થયો
-16. ꦏꦸꦭꦱꦼꦤꦼꦁꦏꦼꦥꦁꦒꦶꦃꦏꦭꦶꦪꦤ꧀ꦥꦤ꧀ꦗꦺꦤꦼꦁꦔꦤ꧀
-17. ބައްދަލުވީތީ ވަރަށް އުފާވެއްޖެ
-18. Ɛyɛ me anigyeɛ sɛ mehyiaa woɔ
-19. ยินดีที่ได้รู้จัก
-20. మిమ్మల్ని కలవడం చాలా సంతోషంగా ఉంది
-
+</div>
 
 @@@
 
@@ -125,44 +112,43 @@ Answers
 @@@
 
 ## Question 1
-1. 여보세요! 그것은 당신을 만나서 반가워요 - korean
-2. Привет! Рад встрече - russian
-3. 你好！ 很高興認識你 - traditional chinese
-4. שלום! זה נחמד לפגוש אותך - hebrew
-5. नमस्कार! आपसे मिलकर अच्छा लगा - hindi
-6. こんにちは！ お会いできて光栄です - japanese
-7. xin chào! Thật vui được gặp bạn - vietnamese
-8. أهلا! من اللطيف مقابلتك - arabic
-9. Բարեւ Ձեզ! Հաճելի է հանդիպել ձեզ - armenian
-10. မင်္ဂလာပါတွေ့ရတာဝမ်းသာပါတယ် - burmese
+* 여보세요! 그것은 당신을 만나서 반가워요 - <span class="answer">korean</span>
+* Привет! Рад встрече - <span class="answer">russian</span>
+* 你好！ 很高興認識你 - <span class="answer">traditional chinese</span>
+* שלום! זה נחמד לפגוש אותך - <span class="answer">hebrew</span>
+* नमस्कार! आपसे मिलकर अच्छा लगा - <span class="answer">hindi</span>
+* こんにちは！ お会いできて光栄です - <span class="answer">japanese</span>
+* xin chào! Thật vui được gặp bạn - <span class="answer">vietnamese</span>
+* أهلا! من اللطيف مقابلتك - <span class="answer">arabic</span>
+* Բարեւ Ձեզ! Հաճելի է հանդիպել ձեզ - <span class="answer">armenian</span>
+* မင်္ဂလာပါတွေ့ရတာဝမ်းသာပါတယ် - <span class="answer">burmese</span>
 @@@
 
-Question 2-11
+## Question 2-11
 
-21. Gled tae meet ye - scots
-22. Salut! Ravi de vous rencontrer - french
-23. Hallo! Sehr nett dich kennzulernen - german
-24. Dia dhuit! Is deas bualadh leat - irish
-25. Ciao! È un piacere conoscerti - italian
-26. Hallo! Het is leuk u te ontmoeten - dutch
-27. ¡Hola! Encantado de conocerte - spanish
-28. Salve! Suus 'nice est in occursum tibi - latin
-29. Hej! Det är trevligt att träffa dig - swedish
-30. Halo! Senang bertemu dengan mu - indonesian
-
-@@@
-
-Question 12
-
-11. ስለተዋወቅን ደስ ብሎኛል - amharic (ethiopia and eritrea)
-12. Հաճելի է - armenian
-13. ᎦᎵᎡᎵ ᏥᏕᎾᎸ  - cherokee
-14. ང་ཁྱོད་དང་མཇལ་དེ་སེམས་དགའ་ཨི་། - Dzongkha (རྫོང་ཁ), a South Tibetic language
-15. તમને મળીને આનંદ થયો - gujarati
-16. ꦏꦸꦭꦱꦼꦤꦼꦁꦏꦼꦥꦁꦒꦶꦃꦏꦭꦶꦪꦤ꧀ꦥꦤ꧀ꦗꦺꦤꦼꦁꦔꦤ꧀ - Javanese
-17. ބައްދަލުވީތީ ވަރަށް އުފާވެއްޖެ - maldivian
-18. Ɛyɛ me anigyeɛ sɛ mehyiaa woɔ - twi
-19. ยินดีที่ได้รู้จัก - thai
-20. మిమ్మల్ని కలవడం చాలా సంతోషంగా ఉంది - telugu
+* Gled tae meet ye - <span class="answer">scots</span>
+* Salut! Ravi de vous rencontrer - <span class="answer">french</span>
+* Hallo! Sehr nett dich kennzulernen - <span class="answer">german</span>
+* Dia dhuit! Is deas bualadh leat - <span class="answer">irish</span>
+* Ciao! È un piacere conoscerti - <span class="answer">italian</span>
+* Hallo! Het is leuk u te ontmoeten - <span class="answer">dutch</span>
+* ¡Hola! Encantado de conocerte - <span class="answer">spanish</span>
+* Salve! Suus 'nice est in occursum tibi - <span class="answer">latin</span>
+* Hej! Det är trevligt att träffa dig - <span class="answer">swedish</span>
+* Halo! Senang bertemu dengan mu - <span class="answer">indonesian</span>
 
 @@@
+
+## Question 12
+
+* ስለተዋወቅን ደስ ብሎኛል - <span class="answer">amharic (ethiopia and eritrea)</span>
+* Հաճելի է - <span class="answer">armenian</span>
+* ᎦᎵᎡᎵ ᏥᏕᎾᎸ  - <span class="answer">cherokee</span>
+* ང་ཁྱོད་དང་མཇལ་དེ་སེམས་དགའ་ཨི་། - <span class="answer">Dzongkha (རྫོང་ཁ), a South Tibetic language</span>
+* તમને મળીને આનંદ થયો - <span class="answer">gujarati</span>
+* ꦏꦸꦭꦱꦼꦤꦼꦁꦏꦼꦥꦁꦒꦶꦃꦏꦭꦶꦪꦤ꧀ꦥꦤ꧀ꦗꦺꦤꦼꦁꦔꦤ꧀ - <span class="answer">Javanese</span>
+* ބައްދަލުވީތީ ވަރަށް އުފާވެއްޖެ - <span class="answer">maldivian</span>
+* Ɛyɛ me anigyeɛ sɛ mehyiaa woɔ - <span class="answer">twi</span>
+* ยินดีที่ได้รู้จัก - <span class="answer">thai</span>
+* మిమ్మల్ని కలవడం చాలా సంతోషంగా ఉంది - <span class="answer">telugu</span>
+
