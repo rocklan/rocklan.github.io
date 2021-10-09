@@ -11,6 +11,7 @@ layout: trivia
 [Doom](/trivia/doom) 
 [Languages](/trivia/tvshowlanguages) 
 [90's Movies](/trivia/90smovies)
+[Langs](/trivia/langs)
 {: .spacing}    
 
 [Scoring Spreadsheet](/trivia/scoring)
