@@ -9,4 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [ RevealMarkdown ]
     });
+
+    //var startTimer = document.getElementById('starttimer');
+    //console.log(startTimer);
+    
 });

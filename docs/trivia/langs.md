@@ -32,63 +32,20 @@ layout: trivia
 
 Listen and name the language
 
+* ?
+* ?
+* ?
+* ?
+* ?
+* ?
+* ?
+* ?
+* ?
+* ?
+
 @@@
 
 ## Question 3
-
-Listen and name the language
-
-@@@
-
-## Question 4
-
-Listen and name the language
-
-@@@
-
-## Question 5
-
-Listen and name the language
-
-@@@
-
-## Question 6
-
-Listen and name the language
-
-@@@
-
-## Question 7
-
-Listen and name the language
-
-@@@
-
-## Question 8
-
-Listen and name the language
-
-@@@
-
-## Question 9
-
-Listen and name the language
-
-@@@
-
-## Question 10
-
-Listen and name the language
-
-@@@
-
-## Question 11
-
-Listen and name the language
-
-@@@
-
-## Question 12
 
 * ስለተዋወቅን ደስ ብሎኛል
 * Հաճելի է
@@ -100,6 +57,9 @@ Listen and name the language
 * Ɛyɛ me anigyeɛ sɛ mehyiaa woɔ
 * ยินดีที่ได้รู้จัก
 * మిమ్మల్ని కలవడం చాలా సంతోషంగా ఉంది
+
+<div id="starttimer">Start Timer</div>
+<div id="timer"></div>
 
 <div class="answer">
 Group into pairs. What languages are these? Internet searching is allowed!
@@ -124,7 +84,7 @@ Answers
 * မင်္ဂလာပါတွေ့ရတာဝမ်းသာပါတယ် - <span class="answer">burmese</span>
 @@@
 
-## Question 2-11
+## Question 2
 
 * Gled tae meet ye - <span class="answer">scots</span>
 * Salut! Ravi de vous rencontrer - <span class="answer">french</span>
@@ -139,7 +99,7 @@ Answers
 
 @@@
 
-## Question 12
+## Question 3
 
 * ስለተዋወቅን ደስ ብሎኛል - <span class="answer">amharic (ethiopia and eritrea)</span>
 * Հաճելի է - <span class="answer">armenian</span>
