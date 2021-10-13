@@ -16,7 +16,7 @@ li { padding-left: 30px; }
 .reveal .footer a {
     padding-right: 5px;
     padding-left: 5px;
-}  
+}
 
 h2 { color: var(--r-link-color) !important; font-size: 32pt !important }
 
@@ -34,3 +34,18 @@ a { text-decoration: underline !important; }
  .onecolumn { width: 45%; float: left;}
  .spacing a { padding-right: 20px; }
  .clearboth { clear: both; }
+
+ .btn {
+     background-color: blue;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     color: white;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     cursor: pointer;
+     border:2px solid #FFFFFF;
+     border-radius:0.12em;
+    font-size: 24pt;
+}

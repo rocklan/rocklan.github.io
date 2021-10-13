@@ -25,6 +25,7 @@ layout: trivia
 * မင်္ဂလာပါတွေ့ရတာဝမ်းသာပါတယ်
 
 <div class="answer">burmese, armenian, arabic, vietnamese, japanese, hindi, hebrew, chinese, russian, korean</div>
+<div data-time="60" class="btn mytimer"></div>
 
 @@@
 
@@ -58,12 +59,23 @@ Listen and name the language
 * ยินดีที่ได้รู้จัก
 * మిమ్మల్ని కలవడం చాలా సంతోషంగా ఉంది
 
-<div id="starttimer">Start Timer</div>
-<div id="timer"></div>
+<div data-time="100" class="btn mytimer"></div>
 
 <div class="answer">
 Group into pairs. What languages are these? Internet searching is allowed!
 </div>
+
+@@@
+
+## Question 4
+
+60 seconds to write down as many languages as you can, you get a point for any unique language.
+
+<div data-time="60" class="btn mytimer">Start Timer - 30 seconds</div>
+
+@@@
+
+## Question 5
 
 @@@
 
@@ -111,4 +123,3 @@ Answers
 * Ɛyɛ me anigyeɛ sɛ mehyiaa woɔ - <span class="answer">twi</span>
 * ยินดีที่ได้รู้จัก - <span class="answer">thai</span>
 * మిమ్మల్ని కలవడం చాలా సంతోషంగా ఉంది - <span class="answer">telugu</span>
-
