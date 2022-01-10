@@ -3,8 +3,12 @@ date:   2022-01-10
 category: technical
 tags: powershell iis certificates 
 title: Updating IIS certificates with powershell
+cover-img: /images/cert.png
+thumbnail-img: /images/cert-small.png
 readtime: true
-hidden: true
+hidden: false
+share-description: Let's say you needed to update your SSL certificates on IIS, across a whole lot of servers. Do you want to do it all manually? Heck no.
+excerpt: Let's say you needed to update your SSL certificates on IIS, across a whole lot of servers. Do you want to do it all manually? Heck no. Let's hack something together in powershell to make it work. The method binding.AddSslCertificate() is the one you're looking for!
 ---
 
 Let's say you were in a situation where you had to update a certificate that was installed on a lot of servers. Do you want to do it all manually? Heck no. Let's hack together some powershell to make it work.
