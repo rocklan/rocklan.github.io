@@ -11,7 +11,8 @@ share-description: Let's say you needed to update your SSL certificates on IIS, 
 excerpt: Let's say you needed to update your SSL certificates on IIS, across a whole lot of servers. Do you want to do it all manually? Heck no. Let's hack something together in powershell to make it work. The method binding.AddSslCertificate() is the one you're looking for!
 ---
 
-Let's say you were in a situation where you had to update a certificate that was installed on a lot of servers. Do you want to do it all manually? Heck no. Let's hack together some powershell to make it work.
+Let's say you were in a situation where you had to update a certificate that was installed on a lot of servers. Do you want to do it all manually? Heck no. Let's hack together some powershell to make it work. This code is very loosely based on [this one](https://devblogs.microsoft.com/scripting/weekend-scripter-use-powershell-to-update-ssl-bindings/) except the typos have been fixed and there's no magic IP addresses :)
+
 
 ### Importing the certificate locally
 
