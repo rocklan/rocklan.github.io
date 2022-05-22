@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Display Webcam Stream</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ 	<link rel="stylesheet" href="styles2.css">
+</head>
+ 
+<body>
+	<div id="setup">
+		<div id="audioinputselectdiv" class="row">
+			Input audio device:
+			<select id="audioinputselect">
+				<option value=''>Please select...</option>
+			</select>
+		</div>
+		<div id="videoinputselectdiv" class="row">
+			Add video device:
+			<select id="videoinputselect">
+				<option value=''>Please select...</option>
+			</select>
+			<button id="addvideo">Add Video</button>
+		</div>
+		<div id="videoControls" class="row">
+			Controls
+			<button id="crossfadeButton">Crossfade</button>
+		</div>
+	</div>
+	<div id="videoContainer"></div>
+	<script src="code2.js"></script>
+</body>
+</html>
