@@ -1,11 +1,6 @@
-var usbVideoDeviceId = 'daa99cc1b6437c51e8c04a5331f985168b814f72b73eb8b571d71c163fd754ef';
-var generalWebcamDeviceId = '2560e7510efe7972133bb05be1dbefdd18836a4f1cc8faeb605e3a63a651b843';
-var scarletSoloDeviceId = '5d4b1081faa91684ea73cff0b3a90335a674278477ef3609ec2a93c1864f2503';
-var c1 = document.getElementById("container1");
-var c2 = document.getElementById("container2");
-var dd = document.getElementById("datadiv");
 var audioinputselect = $('#audioinputselect');
 var videoinputselect = $('#videoinputselect');
+
 var numberofVideos = 0;
 var currentVideo = 1;
 
@@ -112,6 +107,12 @@ function setupVideo(stream) {
 }
 
 function setupCrossFade() {
+
+    // put all the videos on top of each other
+    $("#videoContainer").addClass('grid');
+
+    // hide the controls
+    $("#setup").hide();
 	
 	for (var i=1;i<=numberofVideos;i++) {
 
@@ -126,9 +127,8 @@ function setupCrossFade() {
 	}
 
 	currentVideo = 1;
-	setInterval(crossFade, 3000);
+	setTimeout(crossFade, 3000);
 }
-
 
 function crossFade()
 {
@@ -144,12 +144,8 @@ function crossFade()
 	$("#videoElement"+currentVideo).addClass('showMe');
 	$("#videoElement"+currentVideo).removeClass('hideMe');
 	
+    setTimeout(crossFade, (Math.random() * 15000) + 2000);
 }
-
-//listDevices();
-//setupWebcams();
-
-//
 
 $(document).ready(function(){
 	init();
