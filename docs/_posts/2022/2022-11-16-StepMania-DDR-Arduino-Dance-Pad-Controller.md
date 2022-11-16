@@ -1,5 +1,5 @@
 ---
-date:   2022-11-17
+date:   2022-11-16
 category: technical
 tags: ddr wii stepmania arduino dance pad mat
 title: StepMania/DDR Arduino Dance Pad Controller
