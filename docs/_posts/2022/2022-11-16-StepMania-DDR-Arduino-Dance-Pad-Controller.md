@@ -7,8 +7,8 @@ cover-img: /images/ddr-pad-2.jpg
 thumbnail-img: /images/ddr-pad-2-small.jpg
 readtime: false
 hidden: false
-share-description: How I build an arduino based controller for my DDR dance pad
-excerpt: Building an arduino based USB controller for a DDR/StepMania dance pad. How hard can it be?
+share-description: How I built an arduino based controller for my DDR dance pad
+excerpt: Building an Arduino based USB controller for a DDR/StepMania dance pad. How hard can it be?
 ---
 
 So for the past few months I've been getting into DDR on the Wii. It's great fun and I'm getting pretty good, and what I really need now is to be able to slow down the game to practice some of the faster, trickier sections. But... the game doesn't support that.
