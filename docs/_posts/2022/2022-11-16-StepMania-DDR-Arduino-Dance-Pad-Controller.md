@@ -3,7 +3,7 @@ date:   2022-11-16
 category: technical
 tags: ddr wii stepmania arduino dance pad mat
 title: Programming an Arduino to connect a dance pad via USB for StepMania
-cover-img: /images/ddr-pad-3.jpg
+cover-img: /images/ddr-pad-4.jpg
 thumbnail-img: /images/ddr-pad-4-small.jpg
 readtime: false
 hidden: false
@@ -19,7 +19,7 @@ Unfortunately in Australia they are crazy expensive. **The** one to get is the [
 
 Luckily, I found the [DDR A Game](https://www.ddrgame.com/dance-dance-revolution-pc-energy-metal-stepmania.html) pad on marketplace:
 
-![Stepmania dance pad](/images/ddr-pad-3.jpg){:class="img-responsive"}
+![Stepmania dance pad](/images/ddr-pad-4.jpg){:class="img-responsive"}
 
 While it looks cool - these particular pads don't have the best reviews. Apparently they aren't made particularly well.. but hey, how hard can it be to improve? I also had no idea if it worked, but really... it's just a bunch of buttons. So I bought it.
 
@@ -39,7 +39,7 @@ Woo! All the pads/buttons seem to work ok!
 
 All I need now is to emulate a USB keyboard from the Arduino... but it turns out that an Arduino Uno can't emulate a USB device, what I needed was an [Arduino Leonardo](https://docs.arduino.cc/hardware/leonardo). So I bought one of them, wired it up:
 
-![Arduino Leonardo dance pad controller](/images/ddr-pad-3.jpg){:class="img-responsive"}
+![Arduino Leonardo dance pad controller](/images/ddr-leonardo.jpg){:class="img-responsive"}
 
 And wrote some code to emulate keyboard presses:
 
