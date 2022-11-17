@@ -117,7 +117,11 @@ void loop() {
 
 ```
 
-And it worked! Here's a link to the code in github if anyone needs it: [https://github.com/rocklan/ddr-dance-pad](https://github.com/rocklan/ddr-dance-pad).
+And it worked! 
+
+<div class='embed-container'><iframe src='https://www.youtube.com/embed/IZYFiDaa7q4' frameborder='0' allowfullscreen></iframe></div>
+
+Here's a link to the code in github if anyone needs it: [https://github.com/rocklan/ddr-dance-pad](https://github.com/rocklan/ddr-dance-pad).
 
 So what's the moral of the story? Building stuff yourself is fun. Don't be afraid to try!
 
