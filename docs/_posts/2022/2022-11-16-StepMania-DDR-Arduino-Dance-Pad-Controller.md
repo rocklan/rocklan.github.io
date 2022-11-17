@@ -3,8 +3,8 @@ date:   2022-11-16
 category: technical
 tags: ddr wii stepmania arduino dance pad mat
 title: Programming an Arduino to connect a dance pad via USB for StepMania
-cover-img: /images/ddr-pad-2.jpg
-thumbnail-img: /images/ddr-pad-2-small.jpg
+cover-img: /images/ddr-pad-3.jpg
+thumbnail-img: /images/ddr-pad-4-small.jpg
 readtime: false
 hidden: false
 share-description: Programming an arduino to connect my dance pad via USB  controller for my DDR dance pad
@@ -19,7 +19,7 @@ Unfortunately in Australia they are crazy expensive. **The** one to get is the [
 
 Luckily, I found the [DDR A Game](https://www.ddrgame.com/dance-dance-revolution-pc-energy-metal-stepmania.html) pad on marketplace:
 
-![Stepmania dance pad](/images/ddr-pad-2.jpg){:class="img-responsive"}
+![Stepmania dance pad](/images/ddr-pad-3.jpg){:class="img-responsive"}
 
 While it looks cool - these particular pads don't have the best reviews. Apparently they aren't made particularly well.. but hey, how hard can it be to improve? I also had no idea if it worked, but really... it's just a bunch of buttons. So I bought it.
 
