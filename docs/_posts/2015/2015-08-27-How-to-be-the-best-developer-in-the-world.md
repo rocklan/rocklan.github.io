@@ -13,7 +13,7 @@ tags: craftsmanship popular
 <p>So in order to become the best developer in the world you're going to have to ask yourself a pretty serious question:</p>
 <p><i>"what level am I at?"</i></p>
 <p> To work this out, you might compare yourself to a couple of job ads. If you start poking around the internet for software developer jobs, you’ll find things like this:</p><br />
-<img src="/pics/jobad1.png" class="img-responsive" />
+<img src="/pics/jobad1.png" class="img-responsive" alt="terrible job ad" />
 <br /><br />
 <p>Notice how they advertise "3 years XP"? Unlike other crafts, software development does not have a well-defined methodology for working out how good a programmer is. All we go by is “years of experience” which is a pretty bad methodology - you can sit on your bum for five years, not learn anything, and you're suddenly a mid-level developer. It doesn't really mean anything. Instead of years of experience, what we need to know is <b>competency</b>.</p>
 <p>Have you seen the <a href="http://www.sijinjoseph.com/programmer-competency-matrix/">programmers competency matrix</a>? It's a great list, but I feel like it's missing a bunch of things.</p>

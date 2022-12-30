@@ -125,7 +125,7 @@ zandronum.Rcon.ConnectToRcon(_zandronumRConPassword);
 
 Now let's add some bots to a server (in this case, named Chubbs, Crash and Gamma) and see what happens:
 
-<img src="/images/doombot-output.png" />
+<img src="/images/doombot-output.png" alt="output of doombot" />
 
 Cool! Now let's hook up the bot to be able to pass commands back to the server:
 
@@ -141,7 +141,7 @@ discordClient.MessageReceived += (socket) => {
 
 And let's give it a shot:
 
-<img src="/images/doombot-commands.png" />
+<img src="/images/doombot-commands.png" alt="doombot commands" />
 
 So far it's been running ok and it's pretty stable. The discord.net library is very nice in that it handles disconnections and re-connects!  
 

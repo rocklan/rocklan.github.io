@@ -13,7 +13,7 @@ tags: arduino nerdy midi
 
 <p>So, I bought a <a href="http://www.ebay.com.au/itm/UNO-R3-Board-Ultimate-kit-MEGA328P-ATMEGA16U2-Arduino-Compatible-Melbourne-stock-/321904025393">simple arduino kit</a> and started trying to piece something together. What I wanted to build was a device that has two buttons, one for patch change "next" and one for patch change "previous", and another that displays the current patch number in a 7-segment display. Fortunately I've done a little bit of electronics in my life, so I managed to build a prototype: </p>
 
-<img src="/pics/MidiPatchChangerSchematic.png" class="img-responsive" />
+<img src="/pics/MidiPatchChangerSchematic.png" class="img-responsive" alt="midi patch changer schematic" />
 
 <p>The code is written in some <a href="https://en.wikipedia.org/wiki/Processing_(programming_language)">weird variant of c named 'processing'</a>, and I've put up my <a href="https://github.com/rocklan/arduino-midi">code on github</a>. So here's the first attempt at hooking it up to my old POD HD500 pedal:</p>
 <br />
