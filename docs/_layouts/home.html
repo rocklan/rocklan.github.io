@@ -95,7 +95,11 @@ noindex: 1
 <ul class="pagination main-pager">
   {% if paginator.previous_page %}
   <li class="page-item previous">
+    {% if paginator.page == 2 %}
+    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&larr; Newer Posts</a>
+    {% else %}
     <a class="page-link" href="{{ paginator.previous_page_path | absolute_url | append: '/' }}">&larr; Newer Posts</a>
+    {% endif %}
   </li>
   {% endif %}
   {% if paginator.next_page %}
