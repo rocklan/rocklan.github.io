@@ -1,0 +1,40 @@
+#go {width: 100px; }
+#videoContainer {position: relative; font-size: 0; height:480px;}
+
+.video {
+	width: 640px;
+	height: 480px;
+    float: left;
+    margin-left: 20px;
+}
+
+.grid {
+    display: grid;
+}
+
+.videoCrossFade
+{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 0px;
+}
+
+.fading {
+    transition: opacity 1s linear;
+    
+}
+
+.widescreen {
+    object-fit: fill;
+    width: 852px;
+    height: 480px;
+    transform: translate(-150px, 5px) scale(1.2);
+}
+
+.hideMe {opacity: 0;}
+.showMe {opacity: 1;}
+
+body { background: black; margin: 0px; padding: 0px; color: #eeeeee;}
+
+#setup { padding: 10px; }
+.row { padding-bottom: 10px;}

@@ -13,19 +13,19 @@ Oh and BTW, the android phones that they have in Timor Leste are basic. <b>Very<
 <br /><br />
 So here's the prototype that I've been working on. When the app starts up you are taken to the home screen:
 <br /><br />
-<img src="/pics/1.home.png" class="img-responsive" />
+<img src="/pics/1.home.png" class="img-responsive" alt="language recorder screenshot mobile app" />
 <br /><br /><br />
 Adding a person looks like this:
 <br /><br /><br />
-<img src="/pics/2.addperson.png" class="img-responsive" />
+<img src="/pics/2.addperson.png" class="img-responsive" alt="add new person" />
 <br /><br /><br />
 Once you've done that, you can start asking them "So what do you call this?"
 <br /><br /><br />
-<img src="/pics/3.capture.png" class="img-responsive" />
+<img src="/pics/3.capture.png" class="img-responsive" alt="goat" />
 <br /><br /><br />
 And then you can upload your data:
 <br /><br /><br />
-<img src="/pics/4.upload.png" class="img-responsive" />
+<img src="/pics/4.upload.png" class="img-responsive" alt="data uploader mobile app" />
 <br /><br /><br />
 
 The data is uploaded to a server where it can be analysed by the linguistic geeks. Pretty cool huh!

@@ -4,7 +4,7 @@ category: technical
 readtime: true
 ---
 <p>The last couple of months we have made some nice progress on our app. It's got a cool name, "Local Linguist", and it's had a facelift and a workover by some UI guys:</p>
-<img src="/pics/locallinguist.png" class="img-responsive" />
+<img src="/pics/locallinguist.png" class="img-responsive" alt="local linguist" />
 <p>
  Each screen is much simplier and it will also include a section for listening to audio and providing a translation in your own language.
 </p>
@@ -12,7 +12,7 @@ readtime: true
 <p>Plus here is a photo of the LocalLinguist team at the recent hackathon winning the trophy!! I'm not in the photo, I wasn't there on the day, but I've somewhat contributed to the project! But even still, great job guys.</p>
 <br /><br />
 <p>While I'm here I might as well briefly mention that I recently gave a talk on "How to change things at your company" at <a href="http://dddbynight.dddmelbourne.com/">DDD night</a>, which was great fun. Here's a blurry photo of me doing my thing:</p>
-<img src="/pics/ddd_conference.jpg" class="img-responsive" />
+<img src="/pics/ddd_conference.jpg" class="img-responsive" alt="ddd conf" />
 <br /><br />
 <p>And while I'm here I might as well briefly mention that awesome gig we did last weekend with Toehider. Boy this was a killer gig. Great work everyone :)</p>
-<img src="/pics/toehider.jpg" class="img-responsive" />
+<img src="/pics/toehider.jpg" class="img-responsive" alt="toehider live" />
