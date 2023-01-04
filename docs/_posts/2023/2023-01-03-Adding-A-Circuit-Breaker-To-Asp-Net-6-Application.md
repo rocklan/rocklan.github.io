@@ -1,14 +1,14 @@
 ---
-date: 2023-01-04
+date: 2023-01-03
 category: technical
 tags: c# polly circuit-breaker aspnet
 title: Adding a circuit breaker to your ASP.NET application
 cover-img: /images/blue-beaked-parrot.png
 thumbnail-img: /images/polly-logo.png
 readtime: true
-hidden: true
-share-description: Let's say you needed to update your SSL certificates on IIS, across a whole lot of servers. Do you want to do it all manually? Heck no.
-excerpt: Let's say you needed to update your SSL certificates on IIS, across a whole lot of servers. Do you want to do it all manually? Heck no. Let's hack something together in powershell to make it work. The method binding.AddSslCertificate() is the one you're looking for!
+hidden: false
+share-description: If your ASP.NET 6 application is making many calls to an API that periodically fails, you may want to set up some kind of circuit breaker.
+excerpt: In this example we have an application that calls two API's - one is the google timezone API, which is called by using a standard HttpClient, and another is Redis, which uses it's own custom client. As a first step, we need to create a few policies and add them to a PolicyRegistry.
 ---
 
 If your application is making many calls to an API that periodically fails, it can be handy to set up some kind of "<a href="https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern" target="_blank">circuit breaker</a>" to stop your code from making unnecessary calls to an API that you know is down.
