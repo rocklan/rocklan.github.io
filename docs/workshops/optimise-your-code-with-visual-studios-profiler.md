@@ -3,7 +3,7 @@ layout: workshop
 title: Optimise your code with Visual Studio's Profiler
 share-description: Stop guessing at your performance problems and start proving them using Lachlan's Visual Studio Profiler workshop. 
 subtitle: Dotnet workshops
-cover-img: /images/workshop2.webp
+cover-img: /images/workshop3.jpg
 workshop-id: 1
 date: 2021-09-7 09:00:01
 ---
