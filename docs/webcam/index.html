@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Display Webcam Stream</title>
 	<script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
  	<link rel="stylesheet" href="styles2.css">
 </head>
  
@@ -23,11 +24,15 @@
 			<button id="addvideo">Add Video</button>
 		</div>
 		<div id="videoControls" class="row">
-			Controls
-			<button id="crossfadeButton">Crossfade</button>
+			<button id="crossfadeButton" class="starts">Start Crossfading</button>
+            <button id="insetButton" class="starts">Start Inset</button>
 		</div>
 	</div>
-	<div id="videoContainer"></div>
+	<div id="videoContainer">
+        <div id="fireworksContainer" class="videoCrossFade"></div>
+        <img src="rome2rio-logo-black.png" alt="rome2rio logo" class="videoCrossFade" id="companylogo" />
+    </div>
+    
 	<script src="code2.js"></script>
 </body>
 </html>

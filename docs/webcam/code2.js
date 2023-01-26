@@ -1,14 +1,56 @@
 var audioinputselect = $('#audioinputselect');
 var videoinputselect = $('#videoinputselect');
 
+const fireworksContainer = document.querySelector('#fireworksContainer')
+var fireworks = null;
+
 var numberofVideos = 0;
 var currentVideo = 1;
+var showingFireworks = 0;
 
 function init()
 {
 	listDevices();
+
 	$("#addvideo").click(addVideo);
 	$("#crossfadeButton").click(setupCrossFade);
+    $("#insetButton").click(setupInset);
+    
+
+    document.onkeydown = function(evt) {
+        evt = evt || window.event;
+        if (evt.keyCode == 70) {
+            toggleFireworks();
+        }
+    };
+}
+
+function toggleFireworks()
+{
+    if (fireworks == null) {
+        fireworks  = new Fireworks(fireworksContainer, { 
+            boundaries: { visible: false, 
+                x: 50, y: 50, 
+                width: 640, height: 480 },
+            rocketsPoint: { min: 0, max: 10 }
+        });
+    }
+
+    if (showingFireworks === 0)
+    {
+        fireworks.start()
+        showingFireworks = 1;
+        for (var i=1;i<=numberofVideos;i++) {
+            $("#videoElement" +i).addClass('shrink');
+        }
+    } else {
+        fireworks.stop()
+        showingFireworks = 0;
+        for (var i=1;i<=numberofVideos;i++) {
+            $("#videoElement" +i).removeClass('shrink');
+        }
+    }
+
 }
 
 function listDevices()
@@ -54,9 +96,8 @@ function addVideo()
 	if (selectedVideoDeviceId.text().includes('USB Video (')) {
 		videoClasses += ' widescreen';
 	}
-	console.log(selectedVideoDeviceId.text());
 
-	videoContainer.append("<div id='videoContainer" + numberofVideos + "' class='video'>" + 
+	videoContainer.prepend("<div id='videoContainer" + numberofVideos + "' class='video'>" + 
 		"<video autoplay='true' id='videoElement" + numberofVideos + "' class='" + videoClasses + "'></video>" + 
 		"</div>");
 
@@ -104,6 +145,21 @@ function setupVideo(stream) {
 	
 	//let track = stream.getAudioTracks()[0];
 	//console.log(track.getCapabilities());
+}
+
+function setupInset() {
+    $("#videoContainer").addClass('grid');
+    $("#setup").hide();
+
+    $("#videoContainer1").addClass('videobehindothers');
+
+    for (var i=1;i<=numberofVideos;i++) {
+
+        $("#videoContainer" +i).addClass('videoCrossFade');
+        $("#videoElement"+i).addClass('showMe');
+        $("#videoElement"+i).addClass('spot' + i);
+		
+    }
 }
 
 function setupCrossFade() {

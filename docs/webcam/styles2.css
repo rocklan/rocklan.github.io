@@ -6,10 +6,24 @@
 	height: 480px;
     float: left;
     margin-left: 20px;
+    z-index: 4;
 }
+
+.videobehindothers {
+    z-index: 2;
+}
+
+.shrink {
+    transform: scale(0.2);
+    margin-top: 190px;
+    margin-left: 50px;
+}
+
+#fireworksContainer { width: 640px; height: 480px; z-index: 1; }
 
 .grid {
     display: grid;
+    grid-template-rows: 500px 100px;
 }
 
 .videoCrossFade
@@ -19,9 +33,17 @@
     margin-left: 0px;
 }
 
+.starts { width: 150px; }
+
+#companylogo {
+    z-index: 10;
+    /* This moves it to the bottom if you want 
+    margin-top: 380px;*/
+    opacity: 0.75;
+}
+
 .fading {
-    transition: opacity 1s linear;
-    
+    transition: all 1s linear;
 }
 
 .widescreen {
@@ -37,4 +59,11 @@
 body { background: black; margin: 0px; padding: 0px; color: #eeeeee;}
 
 #setup { padding: 10px; }
+
 .row { padding-bottom: 10px;}
+
+/* Put second video down to the bottom right */
+.spot2 { width: 200px; margin-top: 330px; margin-left: 440px; }
+
+/* Put third video down to the top right */
+.spot3 { width: 200px; margin-top: 0px; margin-left: 440px; }
