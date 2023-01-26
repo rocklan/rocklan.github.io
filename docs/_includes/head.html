@@ -116,6 +116,10 @@
     <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
     {% endif %}
 
+    {% if page.date != "" %}
+    <meta property="og:publish_date" content="{{ page.date | date_to_xmlschema }}">
+    {% endif %}
+
     {% if img != "" and img != site.avatar %}
     <meta name="twitter:card" content="summary_large_image">
     {% else %}
