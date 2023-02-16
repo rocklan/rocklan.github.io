@@ -61,6 +61,7 @@ function listDevices()
 			for (var i=0;i<devices.length;i++)
 			{
 				var device = devices[i];
+				//console.log(device);
 				if (device.kind === 'audioinput')
 				{
 					audioinputselect.append($('<option>', {
@@ -143,8 +144,44 @@ function setupVideo(stream) {
 	var video = document.querySelector("#videoElement" + numberofVideos);
 	video.srcObject = stream;
 	
-	//let track = stream.getAudioTracks()[0];
-	//console.log(track.getCapabilities());
+	setupAudio(stream);
+}
+
+async function setupAudio(stream)
+{
+	var tracks = stream.getAudioTracks();
+	
+	if (tracks.length == 0) {
+		console.log("No audio tracks found...");
+		return;
+	}
+
+	var audioContext = new AudioContext();
+	await audioContext.audioWorklet.addModule('vumeter-processor.js')
+	let microphone = audioContext.createMediaStreamSource(stream);
+	const node = new AudioWorkletNode(audioContext, 'vumeter');
+
+	node.port.onmessage  = event => {
+		let _volume = 0
+		let _sensibility = 5 // Just to add any sensibility to our ecuation
+		if (event.data.volume)
+			_volume = event.data.volume;
+		leds((_volume * 100) / _sensibility)
+	}
+
+	microphone.connect(node).connect(audioContext.destination)
+
+}
+
+canvasContext = $("#audiobar")[0].getContext("2d");
+
+function leds(vol) {
+	
+	var average = 13 * vol;
+	canvasContext.clearRect(0, 0, 60, 130);
+	canvasContext.fillStyle = '#00ff00';
+	canvasContext.fillRect(0,130-average,25,130);
+	
 }
 
 function setupInset() {
@@ -166,6 +203,9 @@ function setupCrossFade() {
 
     // put all the videos on top of each other
     $("#videoContainer").addClass('grid');
+
+	// move audio bar to bottom right
+	$("#audiobar").addClass('audiobarmove');
 
     // hide the controls
     $("#setup").hide();
@@ -204,5 +244,21 @@ function crossFade()
 }
 
 $(document).ready(function(){
-	init();
+	let stream = null
+
+	canvasContext = $("#audiobar")[0].getContext("2d");
+	canvasContext.clearRect(0, 0, 60, 130);
+	canvasContext.fillStyle = '#00ff00';
+	canvasContext.fillRect(0,0,25,130);
+
+
+	navigator.mediaDevices.getUserMedia({audio: true, video: false})
+	.then(s => {
+	  init();
+	})
+	.catch(error => {
+	  console.log('Error :', error)
+	})
+	
+	
 });
