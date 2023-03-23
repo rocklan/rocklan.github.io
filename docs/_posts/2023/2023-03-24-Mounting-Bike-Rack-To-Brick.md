@@ -23,7 +23,7 @@ And instead, buy some [8x40mm dynabolts](https://www.bunnings.com.au/ramset-8-x-
 
 ![Dynabolt Plus 8mm by 40mm](/pics/bike/bike-rack-9.jpg){:class="img-responsive"}
 
-Next step, remove the two allan key bolts, as they get in the way:
+Next step, remove the two allen key bolts, as they get in the way:
 
 ![Bike Rack Bracket](/pics/bike/bike-rack-3.jpg){:class="img-responsive"}
 
@@ -89,7 +89,7 @@ And with a good old fashioned hammer, smack them in. Do each one 1 or 2cm at a t
 
 ![Bike Rack Bracket attached to wall](/pics/bike/bike-rack-22.jpg){:class="img-responsive"}
 
-Now re-attach the bike rack to the bracket using the allan key bolts, and voila, one bike rack!
+Now re-attach the bike rack to the bracket using the allen key bolts, and voila, one bike rack!
 
 ![Bike Rack attached to wall with bikes](/pics/bike/bike-rack-23.jpg){:class="img-responsive"}
 
