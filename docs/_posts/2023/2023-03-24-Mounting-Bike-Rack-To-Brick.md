@@ -4,7 +4,7 @@ category: technical
 tags: mounting bike rack hook wall brick dynabolt
 title: Mounting a bike rack to your brick wall
 cover-img: /pics/bike/bike-on-hook.jpg
-thumbnail-img: /images/bike-on-hook-small.jpg
+thumbnail-img: /pics/bike/bike-on-hook-small.jpg
 readtime: true
 hidden: false
 share-description: How to mount a bike hook/rack to your brick wall
