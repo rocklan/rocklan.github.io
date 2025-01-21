@@ -2,7 +2,7 @@
 date: 2023-01-03
 category: technical
 tags: c# polly circuit-breaker aspnet
-title: Adding a circuit breaker to your ASP.NET application
+title: Adding a circuit breaker to your ASP.NET 6 application
 cover-img: /images/blue-beaked-parrot.png
 thumbnail-img: /images/polly-logo.png
 readtime: true
